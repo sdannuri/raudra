@@ -646,6 +646,8 @@ function F_twoColRow($label = "", $description = "", $value = "") {
 function F_executeTest($test_id) {
     require_once('../config/tce_config.php');
     global $db, $l;
+
+
     // get current date-time
     $current_time = date(K_TIMESTAMP_FORMAT);
     $test_id = intval($test_id);
@@ -1079,7 +1081,7 @@ function F_createTest($test_id, $user_id) {
                 }
                 // 4. select questions
                 // ------------------------------
-                $sqlq = 'SELECT question_id, question_type, question_difficulty, question_position
+                $sqlq = 'SELECT question_id, question_type, question_difficulty, question_position,question_negative_marks,question_marks
 					FROM ' . K_TABLE_QUESTIONS . '';
                 $sqlq .= ' WHERE question_subject_id IN (' . $selected_subjects . ')
 					AND question_difficulty=' . $m['tsubset_difficulty'] . '
@@ -1111,8 +1113,8 @@ function F_createTest($test_id, $user_id) {
                                 }
                             }
                         }
-                        $sqlq .= ' AND question_id IN (' . $wrong_answers_mcsa_questions_ids['\'' . $m['tsubset_answers'] . '\''] . ')';
-                    }
+                    echo     $sqlq .= ' AND question_id IN (' . $wrong_answers_mcsa_questions_ids['\'' . $m['tsubset_answers'] . '\''] . ')';
+                    exit; }
                 } elseif ($m['tsubset_type'] == 2) {
                     // (MCMA : Multiple Choice Multiple Answers) -------
                     // get questions with the right number of answers
@@ -1151,15 +1153,25 @@ function F_createTest($test_id, $user_id) {
                 } else {
                     $sqlq .= ' LIMIT ' . $m['tsubset_quantity'] . '';
                 }
+
+
+
                 if ($rq = F_db_query($sqlq, $db)) {
                     while ($mq = F_db_fetch_array($rq)) {
+                       // print_r($testdata);exit;
                         // store questions data
+
+                      /*  echo "<pre>";
+                        print_r($testdata);exit;*/
                         $tmp_data = array(
                             'id' => $mq['question_id'],
                             'type' => $mq['question_type'],
                             'answers' => $m['tsubset_answers'],
-                            'score' => ($testdata['test_score_unanswered'] * $mq['question_difficulty'])
+                            //'score' => ($testdata['test_score_unanswered'] * $mq['question_difficulty'])
+                            'score' => ($testdata['test_score_unanswered'] * $mq['question_marks'])
+
                         );
+
                         if ($random_questions OR ( $test_questions_order_mode != 0)) {
                             $questions_data[] = $tmp_data;
                         } else {
@@ -1669,6 +1681,7 @@ function F_questionForm($test_id, $testlog_id, $formname) {
             if (F_getBoolean($test_data['test_logout_on_timeout'])) {
                 $str .= '<input type="hidden" name="timeout_logout" id="timeout_logout" value="1" />' . K_NEWLINE;
             }
+            $str .= '<div style="text-align:right">'.$l["w_marks_correct_ans"].':'.$m["question_marks"].' | '.$l["w_negative_marks"].':'.$m["question_negative_marks"].'</div>'.K_NEWLINE;
             $str .= '<a name="questionsection" id="questionsection"></a>' . K_NEWLINE;
             $str .= '<div class="help">';
             $str.='<div class="help_instruction"><span class="instruction-icon"></span><a href="#" id="Instructions" title="Instructions">Instructions</a></div>';

@@ -143,6 +143,19 @@ if (isset($_REQUEST['question_explanation'])) {
 } else {
 	$question_explanation = '';
 }
+
+if(!isset($_REQUEST['question_marks_for_correct']) OR (empty($_REQUEST['question_marks_for_correct']))) {
+    $question_for_correct = 0;
+} else {
+    $question_for_correct = $_REQUEST['question_marks_for_correct'];
+}
+
+if(!isset($_REQUEST['question_negative_marks']) OR (empty($_REQUEST['question_negative_marks']))) {
+    $question_negative = 0;
+} else {
+    $question_negative = $_REQUEST['question_negative_marks'];
+}
+
 $qtype = array('S', 'M', 'T', 'O'); // question types
 
 // check user's authorization
@@ -367,7 +380,9 @@ switch($menu_mode) {
 				question_timer=\''.$question_timer.'\',
 				question_fullscreen=\''.intval($question_fullscreen).'\',
 				question_inline_answers=\''.intval($question_inline_answers).'\',
-				question_auto_next=\''.intval($question_auto_next).'\'
+				question_auto_next=\''.intval($question_auto_next).'\',
+				question_negative_marks=\''.$question_negative.'\',
+				question_marks=\''.$question_for_correct.'\'
 				WHERE question_id='.$question_id.'';
 			if(!$r = F_db_query($sql, $db)) {
 				F_display_db_error(false);
@@ -415,6 +430,7 @@ switch($menu_mode) {
 					F_db_query('ROLLBACK', $db); // rollback transaction
 				}
 			}
+
 			$sql = 'INSERT INTO '.K_TABLE_QUESTIONS.' (
 				question_subject_id,
 				question_description,
@@ -426,7 +442,9 @@ switch($menu_mode) {
 				question_timer,
 				question_fullscreen,
 				question_inline_answers,
-				question_auto_next
+				question_auto_next,
+				question_negative_marks,
+				question_marks
 				) VALUES (
 				'.$question_subject_id.',
 				\''.F_escape_sql($db, $question_description).'\',
@@ -438,8 +456,11 @@ switch($menu_mode) {
 				\''.$question_timer.'\',
 				\''.intval($question_fullscreen).'\',
 				\''.intval($question_inline_answers).'\',
-				\''.intval($question_auto_next).'\'
+				\''.intval($question_auto_next).'\',
+				\''.$question_negative.'\',
+				\''.$question_for_correct.'\'
 				)';
+
 			if(!$r = F_db_query($sql, $db)) {
 				F_display_db_error(false);
 			} else {
@@ -465,6 +486,8 @@ switch($menu_mode) {
 		$question_fullscreen = false;
 		$question_inline_answers = false;
 		$question_auto_next = false;
+        $question_negative = 0;
+        $question_for_correct = 0;
 		break;
 	}
 
@@ -490,6 +513,7 @@ if($subject_module_id <= 0) {
 
 // select subject
 if (($changemodule > 0) OR ($question_subject_id <= 0)) {
+
 	$sql = F_select_subjects_sql('subject_module_id='.$subject_module_id.'').' LIMIT 1';
 	if($r = F_db_query($sql, $db)) {
 		if($m = F_db_fetch_array($r)) {
@@ -517,6 +541,8 @@ if($formstatus) {
 			$question_fullscreen = false;
 			$question_inline_answers = false;
 			$question_auto_next = false;
+            $question_negative = 0;
+            $question_for_correct = 0;
 		} else {
 			$sql = 'SELECT *
 				FROM '.K_TABLE_QUESTIONS.'
@@ -536,6 +562,8 @@ if($formstatus) {
 					$question_fullscreen = F_getBoolean($m['question_fullscreen']);
 					$question_inline_answers = F_getBoolean($m['question_inline_answers']);
 					$question_auto_next = F_getBoolean($m['question_auto_next']);
+                    $question_negative = $m['question_negative_marks'];
+				    $question_for_correct = $m['question_marks'];
 				} else {
 					$question_description = '';
 					$question_explanation = '';
@@ -547,6 +575,8 @@ if($formstatus) {
 					$question_fullscreen = false;
 					$question_inline_answers = false;
 					$question_auto_next = false;
+                    $question_negative = 0;
+                    $question_for_correct = 0;
 				}
 			} else {
 				F_display_db_error();
@@ -813,6 +843,9 @@ echo getFormRowCheckBox('question_fullscreen', $l['w_fullscreen'], $l['h_questio
 echo getFormRowCheckBox('question_inline_answers', $l['w_inline_answers'], $l['h_question_inline_answers'], '', 1, $question_inline_answers, false, '');
 echo getFormRowCheckBox('question_auto_next', $l['w_auto_next'], $l['h_question_auto_next'], '', 1, $question_auto_next, false, '');
 echo getFormRowCheckBox('question_enabled', $l['w_enabled'], $l['h_enabled'], '', 1, $question_enabled, false, '');
+
+echo getFormRowTextInput('question_marks_for_correct', $l['w_marks_correct_ans'],$l['title_marks_correct_ans'], '', $question_for_correct, '^[0-9]+(\.[0-9]{1,2})?$', 10, false, false, false, '');
+echo getFormRowTextInput('question_negative_marks', $l['w_negative_marks'],$l['title_negative_marks'], '', $question_negative, '^[0-9]+(\.[0-9]{1,2})?$', 10, false, false, false, '');
 
 echo '<div class="row btn_cls">'.K_NEWLINE;
 

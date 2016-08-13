@@ -327,6 +327,7 @@ if (isset($teststat) AND !empty($teststat)) {
 	echo getFormDescriptionLine($l['w_test_time'].':', $l['w_test_time'], $time_diff);
 	$passmsg = '';
 	if ($teststat['testinfo']['test_score_threshold'] > 0) {
+
 		if (isset($teststat['testinfo']['user_score']) AND ($teststat['testinfo']['user_score'] >= $teststat['testinfo']['test_score_threshold'])) {
 			$passmsg = ' - '.$l['w_passed'];
 		} else {

@@ -631,4 +631,11 @@ $tmx['hp_import_ssl_certificates'] = 'With this form you can import client SSL c
 $tmx['m_ssl_certificate_required'] = 'To acccess this page you need a valid SSL certificate client.';
 $tmx['w_graph'] = 'Graph';
 
+$tmx['w_marks_correct_ans'] = 'Marks for correct answer';
+$tmx['title_marks_correct_ans'] = 'Marks for correct answer';
+$tmx['w_negative_marks'] = 'Negative Marks';
+$tmx['title_negative_marks'] = 'Negative Marks';
+
+
+
 // --- EOF ---

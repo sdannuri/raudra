@@ -1,4 +1,4 @@
---- START LOG: 2016-07-29 10:39:13 ---
+--- START LOG: 2016-08-13 13:05:10 ---
 [START] database installation
   create or replace database and get connection
   [START] create database tables
@@ -103,4 +103,4 @@
     close file [OK]
   [END] process file: tce_paths.php
 [END] update config files
---- END LOG: 2016-07-29 10:39:22 ---
+--- END LOG: 2016-08-13 13:05:58 ---
