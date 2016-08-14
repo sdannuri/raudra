@@ -902,33 +902,15 @@ function F_printUserTestStat($testuser_id) {
 		while ($m = F_db_fetch_array($r)) {
 			$ret .= '<li>'.K_NEWLINE;
 			// display question stats
-			$ret .= '<strong>['.$m['testlog_score'].']'.K_NEWLINE;
-			$ret .= ' (';
-			$ret .= 'IP:'.getIpAsString($m['testlog_user_ip']).K_NEWLINE;
-			if (isset($m['testlog_display_time']) AND (strlen($m['testlog_display_time']) > 0)) {
-				$ret .= ' | '.substr($m['testlog_display_time'], 11, 8).K_NEWLINE;
-			} else {
-				$ret .= ' | --:--:--'.K_NEWLINE;
-			}
-			if (isset($m['testlog_change_time']) AND (strlen($m['testlog_change_time']) > 0)) {
-				$ret .= ' | '.substr($m['testlog_change_time'], 11, 8).K_NEWLINE;
-			} else {
-				$ret .= ' | --:--:--'.K_NEWLINE;
-			}
-			if (isset($m['testlog_display_time']) AND isset($m['testlog_change_time'])) {
-				$ret .= ' | '.date('i:s', (strtotime($m['testlog_change_time']) - strtotime($m['testlog_display_time']))).'';
-			} else {
-				$ret .= ' | --:--'.K_NEWLINE;
-			}
-			if (isset($m['testlog_reaction_time']) AND ($m['testlog_reaction_time'] > 0)) {
-				$ret .= ' | '.($m['testlog_reaction_time']/1000).'';
-			} else {
-				$ret .= ' | ------'.K_NEWLINE;
-			}
-			$ret .= ')</strong>'.K_NEWLINE;
-			$ret .= '<br />'.K_NEWLINE;
+            if ($m['testlog_score'] < 1.000 && $m['testlog_score'] > 0 ) {
+                $ret .= '<strong>(-' . $m['testlog_score'] . ')' . K_NEWLINE . '</strong>';
+            }
+            else{
+                $ret .= '<strong>('. $m['testlog_score'] . ')' . K_NEWLINE . '</strong>';
+            }
+
 			// display question description
-			$ret .= F_decode_tcecode($m['question_description']).K_NEWLINE;
+			$ret .= K_NEWLINE . F_decode_tcecode($m['question_description']).K_NEWLINE;
 			if (K_ENABLE_QUESTION_EXPLANATION AND !empty($m['question_explanation'])) {
 				$ret .= '<br /><span class="explanation">'.$l['w_explanation'].':</span><br />'.F_decode_tcecode($m['question_explanation']).''.K_NEWLINE;
 			}
@@ -937,6 +919,22 @@ function F_printUserTestStat($testuser_id) {
 				$ret .= '<ul class="answer"><li>'.K_NEWLINE;
 				$ret .= F_decode_tcecode($m['testlog_answer_text']);
 				$ret .= '&nbsp;</li></ul>'.K_NEWLINE;
+
+                $sqla = 'SELECT *
+					FROM '.K_TABLE_LOG_ANSWER.', '.K_TABLE_ANSWERS.'
+					WHERE logansw_answer_id=answer_id
+						AND logansw_testlog_id=\''.$m['testlog_id'].'\'
+					ORDER BY logansw_order';
+                if ($ra = F_db_query($sqla, $db)) {
+                    while ($ma = F_db_fetch_array($ra)) {
+                        $ret .= '</li>';
+                        $ret .= '<br /><span class="explanation">' . $l['w_explanation'] . ':</span><br />' . F_decode_tcecode($ma['answer_explanation']) . '' . K_NEWLINE;
+                    }
+                    $ret .= '</li>' . K_NEWLINE;
+                    if (K_ENABLE_ANSWER_EXPLANATION AND !empty($ma['answer_explanation'])) {
+                        $ret .= '<br /><span class="explanation">Explain'. $l['w_explanation'] . ':</span><br />' . F_decode_tcecode($ma['answer_explanation']) . '' . K_NEWLINE;
+                    }
+                }
 			} else {
 				$ret .= '<ol class="answer">'.K_NEWLINE;
 				// display each answer option
@@ -947,6 +945,7 @@ function F_printUserTestStat($testuser_id) {
 					ORDER BY logansw_order';
 				if ($ra = F_db_query($sqla, $db)) {
 					while ($ma = F_db_fetch_array($ra)) {
+
 						$ret .= '<li>';
 						if ($m['question_type'] == 4) {
 							// ORDER

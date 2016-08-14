@@ -131,28 +131,27 @@ if (F_getBoolean($teststat['testinfo']['test_report_to_users'])) {
 	echo F_printUserTestStat($testuser_id);
 	echo '</div>'.K_NEWLINE;
 
-	// print statistics for modules and subjects
+	/*// print statistics for modules and subjects
 	echo '<div class="rowl">'.K_NEWLINE;
 	echo '<hr />'.K_NEWLINE;
 	echo '<h2>'.$l['w_stats'].'</h2>';
 	echo F_printTestStat($test_id, 0, $user_id, 0, 0, $testuser_id, $teststat, 1, true);
 	echo '<hr />'.K_NEWLINE;
 	echo '</div>'.K_NEWLINE;
-
-	if (K_ENABLE_PUBLIC_PDF) {
+    if (K_ENABLE_PUBLIC_PDF) {
 		echo '<div class="row">'.K_NEWLINE;
 		// PDF button
 		echo '<a href="tce_pdf_results.php?mode=3&amp;test_id='.$test_id.'&amp;user_id='.$user_id.'&amp;testuser_id='.$testuser_id.'" class="xmlbutton" title="'.$l['h_pdf'].'">'.$l['w_pdf'].'</a> ';
 		echo '</div>'.K_NEWLINE;
-	}
+	}*/
 }
 
-echo '</div>'.K_NEWLINE;
+/*echo '</div>'.K_NEWLINE;
 
 echo '<a href="index.php" title="'.$l['h_index'].'">&lt; '.$l['w_index'].'</a>'.K_NEWLINE;
 
 echo '<div class="pagehelp">'.$l['hp_result_user'].'</div>'.K_NEWLINE;
-echo '</div>'.K_NEWLINE;
+echo '</div>'.K_NEWLINE;*/
 
 require_once('../code/tce_page_footer.php');
 

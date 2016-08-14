@@ -1,0 +1,7 @@
+*.git/
+*.iml/
+*.xml/
+.idea/
+.backup/
+*.sql.gz
+*.log

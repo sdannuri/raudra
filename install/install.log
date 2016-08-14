@@ -104,3 +104,35 @@
   [END] process file: tce_paths.php
 [END] update config files
 --- END LOG: 2016-08-13 13:05:58 ---
+[START] database installation
+  create or replace database and get connection
+  [START] create database tables
+    [SQL] 0
+  [END:ERROR] create database tables: [1050]: Table 'tce_sessions' already exists
+[END] database installation
+[START] update config files
+  [START] process file: tce_db_config.php
+    open file [OK]
+    read file [OK]
+      update value 0 [OK]
+      update value 1 [OK]
+      update value 2 [OK]
+      update value 3 [OK]
+      update value 4 [OK]
+      update value 5 [OK]
+      update value 6 [OK]
+    write file [OK]
+    close file [OK]
+  [END] process file: tce_db_config.php
+  [START] process file: tce_paths.php
+    open file [OK]
+    read file [OK]
+      update value 0 [OK]
+      update value 1 [OK]
+      update value 2 [OK]
+      update value 3 [OK]
+    write file [OK]
+    close file [OK]
+  [END] process file: tce_paths.php
+[END] update config files
+--- END LOG: 2016-08-14 01:04:30 ---
