@@ -124,7 +124,9 @@ echo getFormDescriptionLine($l['w_score'].':', $l['h_score_total'], $score_all);
 
 $score_right_all = $teststat['qstats']['right'].' / '.$teststat['qstats']['recurrence'].' ('.$teststat['qstats']['right_perc'].'%)';
 echo getFormDescriptionLine($l['w_answers_right'].':', $l['h_answers_right'], $score_right_all);
-echo getFormDescriptionLine($l['w_comment'].':', $l['h_testcomment'], F_decode_tcecode($teststat['testinfo']['user_comment']));
+$comments = F_decode_tcecode($teststat['testinfo']['user_comment']);
+if(empty($comments)){ $comments = "-";}
+echo getFormDescriptionLine($l['w_comment'].':', $l['h_testcomment'], $comments);
 
 if (F_getBoolean($teststat['testinfo']['test_report_to_users'])) {
 	echo '<div class="rowl">'.K_NEWLINE;

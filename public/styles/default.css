@@ -401,10 +401,10 @@ div.tceformbox {
     overflow: hidden;
     background-color: #e1e1e1;
     border: 1px solid #808080;
-    margin: 0px 0px 0px 400px;
+    margin: 0px 0px 0px 240px;
     padding: 5px 5px 60px 5px;
     text-align: center;
-    width: 45%;
+    width: 65%;
 
 }
 
@@ -1554,3 +1554,9 @@ ul.instruction-tips li span{
     border-radius:6px;
 }
 .btn-bg{background-color: #f4bf3d;}
+.tceformbox .question{width:100% !important;}
+.tceformbox div.row span.formw{margin-top: 1% !important;}
+.tceformbox .row{padding:1% !important;}
+.question .answer li{padding:1% !important;}
+.question li{padding: 1% !important;}
+.tceformbox div.row span.label{text-align: left !important;padding: 0px 1px 0px 15px;}

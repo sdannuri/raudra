@@ -902,8 +902,8 @@ function F_printUserTestStat($testuser_id) {
 		while ($m = F_db_fetch_array($r)) {
 			$ret .= '<li>'.K_NEWLINE;
 			// display question stats
-			$ret .= '<strong>['.$m['testlog_score'].']'.K_NEWLINE;
-			$ret .= ' (';
+			//$ret .= '<strong>['.$m['testlog_score'].']'.K_NEWLINE;
+			/*$ret .= ' (';
 			$ret .= 'IP:'.getIpAsString($m['testlog_user_ip']).K_NEWLINE;
 			if (isset($m['testlog_display_time']) AND (strlen($m['testlog_display_time']) > 0)) {
 				$ret .= ' | '.substr($m['testlog_display_time'], 11, 8).K_NEWLINE;
@@ -925,8 +925,8 @@ function F_printUserTestStat($testuser_id) {
 			} else {
 				$ret .= ' | ------'.K_NEWLINE;
 			}
-			$ret .= ')</strong>'.K_NEWLINE;
-			$ret .= '<br />'.K_NEWLINE;
+			$ret .= ')</strong>'.K_NEWLINE;*/
+			//$ret .= '<br /><br />'.K_NEWLINE;
 			// display question description
 			$ret .= F_decode_tcecode($m['question_description']).K_NEWLINE;
 			if (K_ENABLE_QUESTION_EXPLANATION AND !empty($m['question_explanation'])) {
