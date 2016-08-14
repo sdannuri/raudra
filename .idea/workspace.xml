@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b3372175-62d3-4a36-81ac-ea4dc40c7cca" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/code/tce_login.php" afterPath="$PROJECT_DIR$/admin/code/tce_login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/code/index.php" afterPath="$PROJECT_DIR$/public/code/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/default.css" afterPath="$PROJECT_DIR$/public/styles/default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shared/code/tce_authorization.php" afterPath="$PROJECT_DIR$/shared/code/tce_authorization.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shared/code/tce_functions_test.php" afterPath="$PROJECT_DIR$/shared/code/tce_functions_test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/code/tce_test_execute.php" afterPath="$PROJECT_DIR$/public/code/tce_test_execute.php" />
     </list>
     <ignored path="raudra.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,10 +67,10 @@
       <file leaf-file-name="tce_test_execute.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/code/tce_test_execute.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="319">
+              <caret line="137" column="68" selection-start-line="137" selection-start-column="56" selection-end-line="137" selection-end-column="68" />
               <folding>
-                <marker date="1471158522105" expanded="true" signature="5553:5582" ph="..." />
+                <marker date="1471161987301" expanded="true" signature="5645:5674" ph="..." />
               </folding>
             </state>
           </provider>
@@ -84,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/shared/code/tce_functions_test.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="2069" column="94" selection-start-line="2069" selection-start-column="94" selection-end-line="2069" selection-end-column="94" />
+              <caret line="2023" column="61" selection-start-line="2023" selection-start-column="48" selection-end-line="2023" selection-end-column="61" />
               <folding>
                 <element signature="e#71966#72915#0#PHP" expanded="false" />
                 <marker date="1471158405732" expanded="true" signature="1353:1515" ph="SELECT * FRO... ${K_TABLE_TESTS}" />
@@ -526,7 +522,7 @@
       <workItem from="1471072742895" duration="15298000" />
       <workItem from="1471090658750" duration="4195000" />
       <workItem from="1471106269306" duration="10140000" />
-      <workItem from="1471144196057" duration="13349000" />
+      <workItem from="1471144196057" duration="15162000" />
     </task>
     <task id="LOCAL-00001" summary="New fileds added in to the add question form i.e. Marks for Negative Answer and  Marks for correct answer">
       <created>1471106467777</created>
@@ -549,11 +545,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471153440191</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="clear button added">
+      <created>1471158545670</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1471158545670</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43872000" />
+    <option name="totallyTimeSpent" value="45685000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -611,7 +614,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New fileds added in to the add question form i.e. Marks for Negative Answer and  Marks for correct answer" />
     <MESSAGE value="combined create question and create answer forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="combined create question and create answer forms" />
+    <MESSAGE value="clear button added" />
+    <option name="LAST_COMMIT_MESSAGE" value="clear button added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1154,7 +1158,7 @@
     <entry file="file://$PROJECT_DIR$/shared/code/tce_functions_test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="2069" column="94" selection-start-line="2069" selection-start-column="94" selection-end-line="2069" selection-end-column="94" />
+          <caret line="2023" column="61" selection-start-line="2023" selection-start-column="48" selection-end-line="2023" selection-end-column="61" />
           <folding>
             <element signature="e#71966#72915#0#PHP" expanded="false" />
             <marker date="1471158405732" expanded="true" signature="1353:1515" ph="SELECT * FRO... ${K_TABLE_TESTS}" />
@@ -1212,10 +1216,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/code/tce_test_execute.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="319">
+          <caret line="137" column="68" selection-start-line="137" selection-start-column="56" selection-end-line="137" selection-end-column="68" />
           <folding>
-            <marker date="1471158522105" expanded="true" signature="5553:5582" ph="..." />
+            <marker date="1471161987301" expanded="true" signature="5645:5674" ph="..." />
           </folding>
         </state>
       </provider>

@@ -50,6 +50,7 @@ $answer_text = '';
 $test_comment = '';
 $reaction_time = 0;
 
+
 if (isset($_REQUEST['testid']) AND ($_REQUEST['testid'] > 0)) { 
 	$test_id = intval($_REQUEST['testid']);
 	// check for test password
@@ -118,7 +119,11 @@ if (isset($_REQUEST['testid']) AND ($_REQUEST['testid'] > 0)) {
 		//echo '<span class="infolink">'.F_testInfoLink($test_id, $l['w_info']).'<br /><br /></span>'.K_NEWLINE;
 
 		if (!isset($_REQUEST['terminationform'])) {
+			if(isset($_REQUEST['confirmanswer'])){
+				$_REQUEST['nextquestion'] = "Next >";
+			}
 			if (F_isRightTestlogUser($test_id, $testlog_id)) {
+
 				// the form has been submitted, update testlogid data
 				F_updateQuestionLog($test_id, $testlog_id, $answpos, $answer_text, $reaction_time);
 
@@ -145,6 +150,7 @@ if (isset($_REQUEST['testid']) AND ($_REQUEST['testid'] > 0)) {
 				}
 			}
 		}
+
 		// confirmation form to terminate the test
 		if (isset($_REQUEST['terminatetest']) AND (!empty($_REQUEST['terminatetest']))) {
 			// check if some questions were omitted (undisplayed or unanswered).
@@ -172,6 +178,7 @@ if (isset($_REQUEST['testid']) AND ($_REQUEST['testid'] > 0)) {
 			</div>
 			<?php
 		} else {
+
 			echo '<form action="'.$_SERVER['SCRIPT_NAME'].'" method="post" enctype="multipart/form-data" id="'.$formname.'"';
 			echo ' onsubmit="var submittime=new Date();document.getElementById(\'reaction_time\').value=submittime.getTime()-document.getElementById(\'display_time\').value;"';
 			echo '>'.K_NEWLINE;
