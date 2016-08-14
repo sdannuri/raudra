@@ -283,7 +283,7 @@ $tmx['w_guide'] = 'Help';
 $tmx['w_height'] = 'Height';
 $tmx['w_help'] = 'Help';
 $tmx['w_image'] = 'Image';
-$tmx['w_index'] = 'Index';
+$tmx['w_index'] = 'Home';
 $tmx['w_import'] = 'Import';
 $tmx['w_info'] = 'Info';
 $tmx['w_ip'] = 'IP';
@@ -635,6 +635,7 @@ $tmx['w_marks_correct_ans'] = 'Marks for correct answer';
 $tmx['title_marks_correct_ans'] = 'Marks for correct answer';
 $tmx['w_negative_marks'] = 'Negative Marks';
 $tmx['title_negative_marks'] = 'Negative Marks';
+$tmx['w_back_index'] = 'Back To Home';
 
 
 

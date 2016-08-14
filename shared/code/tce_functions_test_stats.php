@@ -928,7 +928,7 @@ function F_printUserTestStat($testuser_id) {
 			$ret .= ')</strong>'.K_NEWLINE;*/
 			//$ret .= '<br /><br />'.K_NEWLINE;
 			// display question description
-			$ret .= F_decode_tcecode($m['question_description']).K_NEWLINE;
+			$ret .= F_decode_tcecode($m['question_description']).'<span style="float:right">( Marks: '.number_format($m['testlog_score'],2).' )</span>'.K_NEWLINE;
 			if (K_ENABLE_QUESTION_EXPLANATION AND !empty($m['question_explanation'])) {
 				$ret .= '<br /><span class="explanation">'.$l['w_explanation'].':</span><br />'.F_decode_tcecode($m['question_explanation']).''.K_NEWLINE;
 			}
@@ -952,40 +952,48 @@ function F_printUserTestStat($testuser_id) {
 							// ORDER
 							if ($ma['logansw_position'] > 0) {
 								if ($ma['logansw_position'] == $ma['answer_position']) {
-									$ret .= '<acronym title="'.$l['h_answer_right'].'" class="okbox">'.$ma['logansw_position'].'</acronym>';
+									//$ret .= '<acronym title="'.$l['h_answer_right'].'" class="okbox">'.$ma['logansw_position'].'</acronym>';
+                                    $ret .= '<img src="../../images/correct.png" width="18"/>';
 								} else {
-									$ret .= '<acronym title="'.$l['h_answer_wrong'].'" class="nobox">'.$ma['logansw_position'].'</acronym>';
+								//	$ret .= '<acronym title="'.$l['h_answer_wrong'].'" class="nobox">'.$ma['logansw_position'].'</acronym>';
+                                    $ret .= '<img src="../../images/wrong.png" width="16"/>';
 								}
 							} else {
-								$ret .= '<acronym title="'.$l['m_unanswered'].'" class="offbox">&nbsp;</acronym>';
+								//$ret .= '<acronym title="'.$l['m_unanswered'].'" class="offbox">&nbsp;</acronym>';
 							}
 						} elseif ($ma['logansw_selected'] > 0) {
 							if (F_getBoolean($ma['answer_isright'])) {
-								$ret .= '<acronym title="'.$l['h_answer_right'].'" class="okbox">x</acronym>';
+								//$ret .= '<acronym title="'.$l['h_answer_right'].'" class="okbox">x</acronym>';
+                                $ret .= '<img src="../../images/correct.png" width="18"/>';
 							} else {
-								$ret .= '<acronym title="'.$l['h_answer_wrong'].'" class="nobox">x</acronym>';
+                                $ret .= '<img src="../../images/correct.png" width="18"/>';
+								//$ret .= '<acronym title="'.$l['h_answer_wrong'].'" class="nobox">x</acronym>';
 							}
 						} elseif ($m['question_type'] == 1) {
 							// MCSA
-							$ret .= '<acronym title="-" class="offbox">&nbsp;</acronym>';
+							//$ret .= '<acronym title="-" class="offbox">&nbsp;</acronym>';
 						} else {
 							if ($ma['logansw_selected'] == 0) {
 								if (F_getBoolean($ma['answer_isright'])) {
-									$ret .= '<acronym title="'.$l['h_answer_wrong'].'" class="nobox">&nbsp;</acronym>';
+								//	$ret .= '<acronym title="'.$l['h_answer_wrong'].'" class="nobox">&nbsp;</acronym>';
+                                    $ret .= '<img src="../../images/wrong.png" width="16"/>';
 								} else {
-									$ret .= '<acronym title="'.$l['h_answer_right'].'" class="okbox">&nbsp;</acronym>';
+									//$ret .= '<acronym title="'.$l['h_answer_right'].'" class="okbox">&nbsp;</acronym>';
+                                    $ret .= '<img src="../../images/correct.png" width="18"/>';
 								}
 							} else {
-								$ret .= '<acronym title="'.$l['m_unanswered'].'" class="offbox">&nbsp;</acronym>';
+								//$ret .= '<acronym title="'.$l['m_unanswered'].'" class="offbox">&nbsp;</acronym>';
 							}
 						}
 						$ret .= '&nbsp;';
 						if ($m['question_type'] == 4) {
-							$ret .= '<acronym title="'.$l['w_position'].'" class="onbox">'.$ma['answer_position'].'</acronym>';
+						    $ret .= '<acronym title="'.$l['w_position'].'" class="onbox">'.$ma['answer_position'].'</acronym>';
 						} elseif (F_getBoolean($ma['answer_isright'])) {
-							$ret .= '<acronym title="'.$l['w_answers_right'].'" class="onbox">&reg;</acronym>';
+							//$ret .= '<acronym title="'.$l['w_answers_right'].'" class="onbox">&reg;</acronym>';
+
+                            $ret .= '<img src="../../images/wrong.png" width="16"/>';
 						} else {
-							$ret .= '<acronym title="'.$l['w_answers_wrong'].'" class="offbox">&nbsp;</acronym>';
+							//$ret .= '<acronym title="'.$l['w_answers_wrong'].'" class="offbox">&nbsp;</acronym>';
 						}
 						$ret .= ' ';
 						$ret .= F_decode_tcecode($ma['answer_description']);
