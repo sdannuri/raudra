@@ -1,5 +1,4 @@
 <?php
-
 //============================================================+
 // File name   : tce_edit_question.php
 // Begin       : 2004-04-27
@@ -401,40 +400,38 @@ switch($menu_mode) {
 	}
 
 	case 'add':{ // Add
-        if(!isset($_REQUEST['add_answer'])) {
-            if ($formstatus = F_check_form_fields()) {
-                // check if alternate key is unique
-                if (K_DATABASE_TYPE == 'ORACLE') {
-                    $chksql = 'dbms_lob.instr(question_description,\'' . F_escape_sql($db, $question_description) . '\',1,1)>0';
-                } elseif ((K_DATABASE_TYPE == 'MYSQL') AND K_MYSQL_QA_BIN_UNIQUITY) {
-                    $chksql = 'question_description=\'' . F_escape_sql($db, $question_description) . '\' COLLATE utf8_bin';
-                } else {
-                    $chksql = 'question_description=\'' . F_escape_sql($db, $question_description) . '\'';
-                }
-                if (!F_check_unique(K_TABLE_QUESTIONS, $chksql . ' AND question_subject_id=' . $question_subject_id . '')) {
-                    F_print_error('WARNING', $l['m_duplicate_question']);
-                    $formstatus = FALSE;
-                    F_stripslashes_formfields();
-                    break;
-                }
-                $sql = 'START TRANSACTION';
-                if (!$r = F_db_query($sql, $db)) {
-                    F_display_db_error(false);
-                    break;
-                }
-                // adjust questions ordering
-                if ($question_position > 0) {
-                    $sql = 'UPDATE ' . K_TABLE_QUESTIONS . ' SET
+		if($formstatus = F_check_form_fields()) {
+			// check if alternate key is unique
+			if (K_DATABASE_TYPE == 'ORACLE') {
+				$chksql = 'dbms_lob.instr(question_description,\''.F_escape_sql($db, $question_description).'\',1,1)>0';
+			} elseif ((K_DATABASE_TYPE == 'MYSQL') AND K_MYSQL_QA_BIN_UNIQUITY) {
+				$chksql = 'question_description=\''.F_escape_sql($db, $question_description).'\' COLLATE utf8_bin';
+			} else {
+				$chksql = 'question_description=\''.F_escape_sql($db, $question_description).'\'';
+			}
+			if(!F_check_unique(K_TABLE_QUESTIONS, $chksql.' AND question_subject_id='.$question_subject_id.'')) {
+				F_print_error('WARNING', $l['m_duplicate_question']);
+				$formstatus = FALSE; F_stripslashes_formfields();
+				break;
+			}
+			$sql = 'START TRANSACTION';
+			if(!$r = F_db_query($sql, $db)) {
+				F_display_db_error(false);
+				break;
+			}
+			// adjust questions ordering
+			if ($question_position > 0) {
+				$sql = 'UPDATE '.K_TABLE_QUESTIONS.' SET
 					question_position=question_position+1
-					WHERE question_subject_id=' . $question_subject_id . '
-						AND question_position>=' . $question_position . '';
-                    if (!$r = F_db_query($sql, $db)) {
-                        F_display_db_error(false);
-                        F_db_query('ROLLBACK', $db); // rollback transaction
-                    }
-                }
+					WHERE question_subject_id='.$question_subject_id.'
+						AND question_position>='.$question_position.'';
+				if(!$r = F_db_query($sql, $db)) {
+					F_display_db_error(false);
+					F_db_query('ROLLBACK', $db); // rollback transaction
+				}
+			}
 
-                $sql = 'INSERT INTO ' . K_TABLE_QUESTIONS . ' (
+			$sql = 'INSERT INTO '.K_TABLE_QUESTIONS.' (
 				question_subject_id,
 				question_description,
 				question_explanation,
@@ -449,33 +446,32 @@ switch($menu_mode) {
 				question_negative_marks,
 				question_marks
 				) VALUES (
-				' . $question_subject_id . ',
-				\'' . F_escape_sql($db, $question_description) . '\',
-				' . F_empty_to_null($question_explanation) . ',
-				\'' . $question_type . '\',
-				\'' . $question_difficulty . '\',
-				\'' . intval($question_enabled) . '\',
-				' . F_zero_to_null($question_position) . ',
-				\'' . $question_timer . '\',
-				\'' . intval($question_fullscreen) . '\',
-				\'' . intval($question_inline_answers) . '\',
-				\'' . intval($question_auto_next) . '\',
-				\'' . $question_negative . '\',
-				\'' . $question_for_correct . '\'
+				'.$question_subject_id.',
+				\''.F_escape_sql($db, $question_description).'\',
+				'.F_empty_to_null($question_explanation).',
+				\''.$question_type.'\',
+				\''.$question_difficulty.'\',
+				\''.intval($question_enabled).'\',
+				'.F_zero_to_null($question_position).',
+				\''.$question_timer.'\',
+				\''.intval($question_fullscreen).'\',
+				\''.intval($question_inline_answers).'\',
+				\''.intval($question_auto_next).'\',
+				\''.$question_negative.'\',
+				\''.$question_for_correct.'\'
 				)';
 
-                if (!$r = F_db_query($sql, $db)) {
-                    F_display_db_error(false);
-                } else {
-                    $question_id = F_db_insert_id($db, K_TABLE_QUESTIONS, 'question_id');
-                }
-                $sql = 'COMMIT';
-                if (!$r = F_db_query($sql, $db)) {
-                    F_display_db_error(false);
-                    break;
-                }
-            }
-        }
+			if(!$r = F_db_query($sql, $db)) {
+				F_display_db_error(false);
+			} else {
+				$question_id = F_db_insert_id($db, K_TABLE_QUESTIONS, 'question_id');
+			}
+			$sql = 'COMMIT';
+			if(!$r = F_db_query($sql, $db)) {
+				F_display_db_error(false);
+				break;
+			}
+		}
 		break;
 	}
 
@@ -868,7 +864,6 @@ F_submit_button('clear', $l['w_clear'], $l['h_clear']);
 
 echo '</div>'.K_NEWLINE;
 
-
 echo '<div class="row">'.K_NEWLINE;
 echo '<span class="left">'.K_NEWLINE;
 echo '&nbsp;'.K_NEWLINE;
@@ -890,9 +885,6 @@ echo '<input type="hidden" name="ff_required_labels" id="ff_required_labels" val
 
 echo '</div>'.K_NEWLINE;
 
-if (isset($question_id) AND ($question_id > 0)) {
-    require_once 'tce_edit_answer.php';
-}
 echo '<div class="row"><hr /></div>'.K_NEWLINE;
 
 echo '<div class="rowl prw" title="'.$l['h_preview'].'">'.K_NEWLINE;

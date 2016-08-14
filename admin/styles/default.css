@@ -336,7 +336,7 @@ div.preview {
 
 div.row {
 	clear: both;
-	padding: 1px 1px 1px 1px;
+	padding: 1%;
 	text-align: center;
 }
 
@@ -1189,3 +1189,13 @@ fieldset{
 .user-search-filter{
     margin:5% 0% 0% 14%
 }
+.label-position{position: relative;right: 70px;top: 25px;}
+/*.sub-container-box{width:95% !important;}*/
+/*.sub-container-box div.row span.label{width:15% !important;}*/
+.col1{width:33%!important;float: left;}
+.col2{width:33%!important;float: left;}
+.col3{width:33%!important;float: right;}
+.col1 div.row span.label{width:29% !important;margin-top: 2%;}
+.col2 div.row span.label{width:29% !important;margin-top: 2%;}
+.col3 div.row span.label{width:29% !important;margin-top: 2%;}
+.label-width{width: 10% !important;}

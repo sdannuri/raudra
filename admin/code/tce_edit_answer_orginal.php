@@ -120,11 +120,7 @@ if (isset($_REQUEST['subject_id'])) {
 }
 if (isset($_REQUEST['answer_question_id'])) {
 	$answer_question_id = intval($_REQUEST['answer_question_id']);
-}
-else if(isset($_REQUEST['question_id'])){
-	$answer_question_id = intval($_REQUEST['question_id']);
-}
-else {
+} else {
 	$answer_question_id =  0;
 }
 if(!isset($answer_keyboard_key) OR (empty($answer_keyboard_key))) {
@@ -396,43 +392,42 @@ switch($menu_mode) {
 	}
 
 	case 'add':{ // Add
-		if(isset($_REQUEST['add_answer'])){
-			if($formstatus = F_check_form_fields()) {
-				// check if alternate key is unique
-				if (K_DATABASE_TYPE == 'ORACLE') {
-					$chksql = 'dbms_lob.instr(answer_description,\''.F_escape_sql($db, $answer_description).'\',1,1)>0';
-				} elseif ((K_DATABASE_TYPE == 'MYSQL') AND K_MYSQL_QA_BIN_UNIQUITY) {
-					$chksql = 'answer_description=\''.F_escape_sql($db, $answer_description).'\' COLLATE utf8_bin';
-				} else {
-					$chksql = 'answer_description=\''.F_escape_sql($db, $answer_description).'\'';
-				}
-				if ($answer_position > 0) {
-					$chksql .= ' AND answer_position='.$answer_position;
-				}
-				if(!F_check_unique(K_TABLE_ANSWERS, $chksql.' AND answer_question_id='.$answer_question_id)) {
-					F_print_error('WARNING', $l['m_duplicate_answer']);
-					$formstatus = FALSE;
-					F_stripslashes_formfields();
-					break;
-				}
+		if($formstatus = F_check_form_fields()) {
+			// check if alternate key is unique
+			if (K_DATABASE_TYPE == 'ORACLE') {
+				$chksql = 'dbms_lob.instr(answer_description,\''.F_escape_sql($db, $answer_description).'\',1,1)>0';
+			} elseif ((K_DATABASE_TYPE == 'MYSQL') AND K_MYSQL_QA_BIN_UNIQUITY) {
+				$chksql = 'answer_description=\''.F_escape_sql($db, $answer_description).'\' COLLATE utf8_bin';
+			} else {
+				$chksql = 'answer_description=\''.F_escape_sql($db, $answer_description).'\'';
+			}
+			if ($answer_position > 0) {
+				$chksql .= ' AND answer_position='.$answer_position;
+			}
+			if(!F_check_unique(K_TABLE_ANSWERS, $chksql.' AND answer_question_id='.$answer_question_id)) {
+				F_print_error('WARNING', $l['m_duplicate_answer']);
+				$formstatus = FALSE;
+				F_stripslashes_formfields();
+				break;
+			}
 
-				$sql = 'START TRANSACTION';
-				if(!$r = F_db_query($sql, $db)) {
-					F_display_db_error(false);
-					break;
-				}
-				// adjust questions ordering
-				if ($answer_position > 0) {
-					$sql = 'UPDATE '.K_TABLE_ANSWERS.' SET
+			$sql = 'START TRANSACTION';
+			if(!$r = F_db_query($sql, $db)) {
+				F_display_db_error(false);
+				break;
+			}
+			// adjust questions ordering
+			if ($answer_position > 0) {
+				$sql = 'UPDATE '.K_TABLE_ANSWERS.' SET
 					answer_position=answer_position+1
 					WHERE answer_question_id='.$answer_question_id.'
 						AND answer_position>='.$answer_position.'';
-					if(!$r = F_db_query($sql, $db)) {
-						F_display_db_error(false);
-						F_db_query('ROLLBACK', $db); // rollback transaction
-					}
+				if(!$r = F_db_query($sql, $db)) {
+					F_display_db_error(false);
+					F_db_query('ROLLBACK', $db); // rollback transaction
 				}
-				$sql = 'INSERT INTO '.K_TABLE_ANSWERS.' (
+			}
+			$sql = 'INSERT INTO '.K_TABLE_ANSWERS.' (
 				answer_question_id,
 				answer_description,
 				answer_explanation,
@@ -449,20 +444,18 @@ switch($menu_mode) {
 				'.F_zero_to_null($answer_position).',
 				'.F_empty_to_null($answer_keyboard_key).'
 				)';
-				if(!$r = F_db_query($sql, $db)) {
-					F_display_db_error(false);
-					F_db_query('ROLLBACK', $db); // rollback transaction
-				} else {
-					$answer_id = F_db_insert_id($db, K_TABLE_ANSWERS, 'answer_id');
-				}
-				$sql = 'COMMIT';
-				if(!$r = F_db_query($sql, $db)) {
-					F_display_db_error(false);
-					break;
-				}
+			if(!$r = F_db_query($sql, $db)) {
+				F_display_db_error(false);
+				F_db_query('ROLLBACK', $db); // rollback transaction
+			} else {
+				$answer_id = F_db_insert_id($db, K_TABLE_ANSWERS, 'answer_id');
+			}
+			$sql = 'COMMIT';
+			if(!$r = F_db_query($sql, $db)) {
+				F_display_db_error(false);
+				break;
 			}
 		}
-
 		break;
 	}
 
@@ -586,8 +579,8 @@ echo '<script src="'.K_PATH_SHARED_JSCRIPTS.'inserttag.js" type="text/javascript
 if (K_ENABLE_VIRTUAL_KEYBOARD) {
 	echo '<script src="'.K_PATH_SHARED_JSCRIPTS.'vk/vk_easy.js?vk_skin=default" type="text/javascript"></script>'.K_NEWLINE;
 }
-echo "<br/>";
-//echo '<div class="sub-container user-container">'.K_NEWLINE;
+
+echo '<div class="sub-container user-container">'.K_NEWLINE;
 echo '<div class="sub-heading"><h1>Create Answer</h1></div>';
 echo '<div class="tceformbox-user-body">'.K_NEWLINE;
 echo '<form action="'.$_SERVER['SCRIPT_NAME'].'" method="post" enctype="multipart/form-data" id="form_answereditor">'.K_NEWLINE;
@@ -861,7 +854,7 @@ if (isset($answer_id) AND ($answer_id > 0)) {
 	echo '<input type="checkbox" name="confirmupdate" id="confirmupdate" value="1" title="confirm &rarr; update" />';
 	F_submit_button('update', $l['w_update'], $l['h_update']);
 	echo '</span>';
-	F_submit_button('add_answer', $l['w_add'], $l['h_add']);
+	F_submit_button('add', $l['w_add'], $l['h_add']);
 	F_submit_button('delete', $l['w_delete'], $l['h_delete']);
 } else {
 	F_submit_button('add', $l['w_add'], $l['h_add']);
@@ -904,7 +897,7 @@ echo '</div>'.K_NEWLINE;
 //echo '<div class="pagehelp">'.$l['hp_edit_answer'].'</div>'.K_NEWLINE;
 echo '</div>'.K_NEWLINE;
 
-//require_once('../code/tce_page_footer.php');
+require_once('../code/tce_page_footer.php');
 
 //============================================================+
 // END OF FILE
