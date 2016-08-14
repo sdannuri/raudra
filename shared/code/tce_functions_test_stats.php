@@ -929,9 +929,7 @@ function F_printUserTestStat($testuser_id) {
 			//$ret .= '<br /><br />'.K_NEWLINE;
 			// display question description
 			$ret .= F_decode_tcecode($m['question_description']).'<span style="float:right">( Marks: '.number_format($m['testlog_score'],2).' )</span>'.K_NEWLINE;
-			if (K_ENABLE_QUESTION_EXPLANATION AND !empty($m['question_explanation'])) {
-				$ret .= '<br /><span class="explanation">'.$l['w_explanation'].':</span><br />'.F_decode_tcecode($m['question_explanation']).''.K_NEWLINE;
-			}
+
 			if ($m['question_type'] == 3) {
 				// TEXT
 				$ret .= '<ul class="answer"><li>'.K_NEWLINE;
@@ -1001,12 +999,19 @@ function F_printUserTestStat($testuser_id) {
 						if (K_ENABLE_ANSWER_EXPLANATION AND !empty($ma['answer_explanation'])) {
 							$ret .= '<br /><span class="explanation">'.$l['w_explanation'].':</span><br />'.F_decode_tcecode($ma['answer_explanation']).''.K_NEWLINE;
 						}
+
 						$ret .= '</li>'.K_NEWLINE;
 					}
+
 				} else {
 					F_display_db_error();
 				}
+
+
 				$ret .= '</ol>'.K_NEWLINE;
+                if (K_ENABLE_QUESTION_EXPLANATION AND !empty($m['question_explanation'])) {
+                    $ret .= '<br /><span class="explanation">'.$l['w_explanation'].':</span><br /><br />'.F_decode_tcecode($m['question_explanation']).''.K_NEWLINE;
+                }
 			} // end multiple answers
 			// display teacher/supervisor comment to the question
 			if (isset($m['testlog_comment']) AND (!empty($m['testlog_comment']))) {

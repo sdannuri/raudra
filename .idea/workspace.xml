@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b3372175-62d3-4a36-81ac-ea4dc40c7cca" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shared/code/tce_functions_test_stats.php" afterPath="$PROJECT_DIR$/shared/code/tce_functions_test_stats.php" />
     </list>
     <ignored path="raudra.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,7 +47,7 @@
       <file leaf-file-name="tce_show_result_user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/code/tce_show_result_user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
+            <state relative-caret-position="659">
               <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
               <folding>
                 <marker date="1471170806843" expanded="true" signature="1724:1844" ph="SELECT testu... ${K_TABLE_TEST_USER}" />
@@ -58,53 +59,53 @@
       <file leaf-file-name="tce_functions_test_stats.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shared/code/tce_functions_test_stats.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="966" column="89" selection-start-line="966" selection-start-column="89" selection-end-line="966" selection-end-column="89" />
+            <state relative-caret-position="45">
+              <caret line="990" column="0" selection-start-line="990" selection-start-column="0" selection-end-line="990" selection-end-column="0" />
               <folding>
-                <marker date="1471173770112" expanded="true" signature="2273:2738" ph="SELECT SUM(t... ${K_TABLE_TEST_USER}" />
-                <marker date="1471173770112" expanded="true" signature="7804:7906" ph="SELECT testu... ${$sqltot}" />
-                <marker date="1471173770112" expanded="true" signature="29711:29736" ph="..." />
-                <marker date="1471173770112" expanded="true" signature="31136:31161" ph="..." />
-                <marker date="1471173770112" expanded="true" signature="31488:31494" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="32382:32407" ph="..." />
-                <marker date="1471173770112" expanded="true" signature="32771:32777" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="33043:33049" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="34081:34106" ph="..." />
-                <marker date="1471173770112" expanded="true" signature="34147:34172" ph="..." />
-                <marker date="1471173770112" expanded="true" signature="34585:34591" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="34866:34872" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="35949:35974" ph="..." />
-                <marker date="1471173770112" expanded="true" signature="36017:36042" ph="..." />
-                <marker date="1471173770112" expanded="true" signature="36116:36141" ph="..." />
-                <marker date="1471173770112" expanded="true" signature="36561:36567" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="36851:36857" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="38019:38044" ph="..." />
-                <marker date="1471173770112" expanded="true" signature="38120:38145" ph="..." />
-                <marker date="1471173770112" expanded="true" signature="38222:38247" ph="..." />
-                <marker date="1471173770112" expanded="true" signature="38810:38816" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="38871:38877" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="39326:39332" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="39387:39393" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="40685:40691" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="43308:43326" ph="..." />
-                <marker date="1471173770112" expanded="true" signature="43491:43509" ph="..." />
-                <marker date="1471173770112" expanded="true" signature="44662:44668" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="44782:44788" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="44907:44913" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="45038:45044" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="45166:45172" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="45290:45315" ph="..." />
-                <marker date="1471173770112" expanded="true" signature="45369:45394" ph="..." />
-                <marker date="1471173770112" expanded="true" signature="45764:45770" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="47940:47946" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="48493:48776" ph="SELECT * FRO... ${K_TABLE_QUESTIONS}" />
-                <marker date="1471173770112" expanded="true" signature="50620:50626" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="50753:50936" ph="SELECT * FRO... ${K_TABLE_LOG_ANSWER}" />
-                <marker date="1471173770112" expanded="true" signature="52365:52371" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="54358:54364" ph=" " />
-                <marker date="1471173770112" expanded="true" signature="55838:56155" ph="SELECT testu... ${K_TABLE_TESTS_LOGS}" />
-                <marker date="1471173770112" expanded="true" signature="65582:65782" ph="SELECT test_... ${K_TABLE_TESTS}" />
-                <marker date="1471173770112" expanded="true" signature="65638:65763" ph="SELECT DISTI... ${K_TABLE_TEST_USER}" />
+                <marker date="1471191593191" expanded="true" signature="2273:2738" ph="SELECT SUM(t... ${K_TABLE_TEST_USER}" />
+                <marker date="1471191593191" expanded="true" signature="7804:7906" ph="SELECT testu... ${$sqltot}" />
+                <marker date="1471191593191" expanded="true" signature="29711:29736" ph="..." />
+                <marker date="1471191593191" expanded="true" signature="31136:31161" ph="..." />
+                <marker date="1471191593191" expanded="true" signature="31488:31494" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="32382:32407" ph="..." />
+                <marker date="1471191593191" expanded="true" signature="32771:32777" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="33043:33049" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="34081:34106" ph="..." />
+                <marker date="1471191593191" expanded="true" signature="34147:34172" ph="..." />
+                <marker date="1471191593191" expanded="true" signature="34585:34591" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="34866:34872" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="35949:35974" ph="..." />
+                <marker date="1471191593191" expanded="true" signature="36017:36042" ph="..." />
+                <marker date="1471191593191" expanded="true" signature="36116:36141" ph="..." />
+                <marker date="1471191593191" expanded="true" signature="36561:36567" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="36851:36857" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="38019:38044" ph="..." />
+                <marker date="1471191593191" expanded="true" signature="38120:38145" ph="..." />
+                <marker date="1471191593191" expanded="true" signature="38222:38247" ph="..." />
+                <marker date="1471191593191" expanded="true" signature="38810:38816" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="38871:38877" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="39326:39332" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="39387:39393" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="40685:40691" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="43308:43326" ph="..." />
+                <marker date="1471191593191" expanded="true" signature="43491:43509" ph="..." />
+                <marker date="1471191593191" expanded="true" signature="44662:44668" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="44782:44788" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="44907:44913" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="45038:45044" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="45166:45172" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="45290:45315" ph="..." />
+                <marker date="1471191593191" expanded="true" signature="45369:45394" ph="..." />
+                <marker date="1471191593191" expanded="true" signature="45764:45770" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="47940:47946" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="48493:48776" ph="SELECT * FRO... ${K_TABLE_QUESTIONS}" />
+                <marker date="1471191593191" expanded="true" signature="50394:50400" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="50527:50710" ph="SELECT * FRO... ${K_TABLE_LOG_ANSWER}" />
+                <marker date="1471191593191" expanded="true" signature="52139:52145" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="54411:54417" ph=" " />
+                <marker date="1471191593191" expanded="true" signature="55891:56208" ph="SELECT testu... ${K_TABLE_TESTS_LOGS}" />
+                <marker date="1471191593191" expanded="true" signature="65635:65835" ph="SELECT test_... ${K_TABLE_TESTS}" />
+                <marker date="1471191593191" expanded="true" signature="65691:65816" ph="SELECT DISTI... ${K_TABLE_TEST_USER}" />
               </folding>
             </state>
           </provider>
@@ -431,7 +432,7 @@
       <workItem from="1471090658750" duration="4195000" />
       <workItem from="1471106269306" duration="10140000" />
       <workItem from="1471144196057" duration="15833000" />
-      <workItem from="1471164350749" duration="8658000" />
+      <workItem from="1471164350749" duration="9690000" />
     </task>
     <task id="LOCAL-00001" summary="New fileds added in to the add question form i.e. Marks for Negative Answer and  Marks for correct answer">
       <created>1471106467777</created>
@@ -496,11 +497,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471173842131</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="images order changed">
+      <created>1471173848096</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1471173848096</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55014000" />
+    <option name="totallyTimeSpent" value="56046000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -863,6 +871,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="1176" column="28" selection-start-line="1176" selection-start-column="28" selection-end-line="1176" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1067,7 +1076,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/code/tce_show_result_user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
+        <state relative-caret-position="659">
           <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
           <folding>
             <marker date="1471170806843" expanded="true" signature="1724:1844" ph="SELECT testu... ${K_TABLE_TEST_USER}" />
@@ -1077,53 +1086,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shared/code/tce_functions_test_stats.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="966" column="89" selection-start-line="966" selection-start-column="89" selection-end-line="966" selection-end-column="89" />
+        <state relative-caret-position="45">
+          <caret line="990" column="0" selection-start-line="990" selection-start-column="0" selection-end-line="990" selection-end-column="0" />
           <folding>
-            <marker date="1471173770112" expanded="true" signature="2273:2738" ph="SELECT SUM(t... ${K_TABLE_TEST_USER}" />
-            <marker date="1471173770112" expanded="true" signature="7804:7906" ph="SELECT testu... ${$sqltot}" />
-            <marker date="1471173770112" expanded="true" signature="29711:29736" ph="..." />
-            <marker date="1471173770112" expanded="true" signature="31136:31161" ph="..." />
-            <marker date="1471173770112" expanded="true" signature="31488:31494" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="32382:32407" ph="..." />
-            <marker date="1471173770112" expanded="true" signature="32771:32777" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="33043:33049" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="34081:34106" ph="..." />
-            <marker date="1471173770112" expanded="true" signature="34147:34172" ph="..." />
-            <marker date="1471173770112" expanded="true" signature="34585:34591" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="34866:34872" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="35949:35974" ph="..." />
-            <marker date="1471173770112" expanded="true" signature="36017:36042" ph="..." />
-            <marker date="1471173770112" expanded="true" signature="36116:36141" ph="..." />
-            <marker date="1471173770112" expanded="true" signature="36561:36567" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="36851:36857" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="38019:38044" ph="..." />
-            <marker date="1471173770112" expanded="true" signature="38120:38145" ph="..." />
-            <marker date="1471173770112" expanded="true" signature="38222:38247" ph="..." />
-            <marker date="1471173770112" expanded="true" signature="38810:38816" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="38871:38877" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="39326:39332" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="39387:39393" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="40685:40691" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="43308:43326" ph="..." />
-            <marker date="1471173770112" expanded="true" signature="43491:43509" ph="..." />
-            <marker date="1471173770112" expanded="true" signature="44662:44668" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="44782:44788" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="44907:44913" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="45038:45044" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="45166:45172" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="45290:45315" ph="..." />
-            <marker date="1471173770112" expanded="true" signature="45369:45394" ph="..." />
-            <marker date="1471173770112" expanded="true" signature="45764:45770" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="47940:47946" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="48493:48776" ph="SELECT * FRO... ${K_TABLE_QUESTIONS}" />
-            <marker date="1471173770112" expanded="true" signature="50620:50626" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="50753:50936" ph="SELECT * FRO... ${K_TABLE_LOG_ANSWER}" />
-            <marker date="1471173770112" expanded="true" signature="52365:52371" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="54358:54364" ph=" " />
-            <marker date="1471173770112" expanded="true" signature="55838:56155" ph="SELECT testu... ${K_TABLE_TESTS_LOGS}" />
-            <marker date="1471173770112" expanded="true" signature="65582:65782" ph="SELECT test_... ${K_TABLE_TESTS}" />
-            <marker date="1471173770112" expanded="true" signature="65638:65763" ph="SELECT DISTI... ${K_TABLE_TEST_USER}" />
+            <marker date="1471191593191" expanded="true" signature="2273:2738" ph="SELECT SUM(t... ${K_TABLE_TEST_USER}" />
+            <marker date="1471191593191" expanded="true" signature="7804:7906" ph="SELECT testu... ${$sqltot}" />
+            <marker date="1471191593191" expanded="true" signature="29711:29736" ph="..." />
+            <marker date="1471191593191" expanded="true" signature="31136:31161" ph="..." />
+            <marker date="1471191593191" expanded="true" signature="31488:31494" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="32382:32407" ph="..." />
+            <marker date="1471191593191" expanded="true" signature="32771:32777" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="33043:33049" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="34081:34106" ph="..." />
+            <marker date="1471191593191" expanded="true" signature="34147:34172" ph="..." />
+            <marker date="1471191593191" expanded="true" signature="34585:34591" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="34866:34872" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="35949:35974" ph="..." />
+            <marker date="1471191593191" expanded="true" signature="36017:36042" ph="..." />
+            <marker date="1471191593191" expanded="true" signature="36116:36141" ph="..." />
+            <marker date="1471191593191" expanded="true" signature="36561:36567" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="36851:36857" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="38019:38044" ph="..." />
+            <marker date="1471191593191" expanded="true" signature="38120:38145" ph="..." />
+            <marker date="1471191593191" expanded="true" signature="38222:38247" ph="..." />
+            <marker date="1471191593191" expanded="true" signature="38810:38816" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="38871:38877" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="39326:39332" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="39387:39393" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="40685:40691" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="43308:43326" ph="..." />
+            <marker date="1471191593191" expanded="true" signature="43491:43509" ph="..." />
+            <marker date="1471191593191" expanded="true" signature="44662:44668" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="44782:44788" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="44907:44913" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="45038:45044" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="45166:45172" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="45290:45315" ph="..." />
+            <marker date="1471191593191" expanded="true" signature="45369:45394" ph="..." />
+            <marker date="1471191593191" expanded="true" signature="45764:45770" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="47940:47946" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="48493:48776" ph="SELECT * FRO... ${K_TABLE_QUESTIONS}" />
+            <marker date="1471191593191" expanded="true" signature="50394:50400" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="50527:50710" ph="SELECT * FRO... ${K_TABLE_LOG_ANSWER}" />
+            <marker date="1471191593191" expanded="true" signature="52139:52145" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="54411:54417" ph=" " />
+            <marker date="1471191593191" expanded="true" signature="55891:56208" ph="SELECT testu... ${K_TABLE_TESTS_LOGS}" />
+            <marker date="1471191593191" expanded="true" signature="65635:65835" ph="SELECT test_... ${K_TABLE_TESTS}" />
+            <marker date="1471191593191" expanded="true" signature="65691:65816" ph="SELECT DISTI... ${K_TABLE_TEST_USER}" />
           </folding>
         </state>
       </provider>
