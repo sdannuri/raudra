@@ -966,7 +966,7 @@ function F_printUserTestStat($testuser_id) {
 								//$ret .= '<acronym title="'.$l['h_answer_right'].'" class="okbox">x</acronym>';
                                 $ret .= '<img src="../../images/correct.png" width="18"/>';
 							} else {
-                                $ret .= '<img src="../../images/correct.png" width="18"/>';
+                                $ret .= '<img src="../../images/wrong.png" width="16"/>';
 								//$ret .= '<acronym title="'.$l['h_answer_wrong'].'" class="nobox">x</acronym>';
 							}
 						} elseif ($m['question_type'] == 1) {
@@ -991,8 +991,9 @@ function F_printUserTestStat($testuser_id) {
 						} elseif (F_getBoolean($ma['answer_isright'])) {
 							//$ret .= '<acronym title="'.$l['w_answers_right'].'" class="onbox">&reg;</acronym>';
 
-                            $ret .= '<img src="../../images/wrong.png" width="16"/>';
+                            $ret .= '<img src="../../images/correct.png" width="18"/>';
 						} else {
+                            $ret .= '<img src="../../images/wrong.png" width="16"/>';
 							//$ret .= '<acronym title="'.$l['w_answers_wrong'].'" class="offbox">&nbsp;</acronym>';
 						}
 						$ret .= ' ';
