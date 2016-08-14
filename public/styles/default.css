@@ -1100,6 +1100,7 @@ span.copyright{
     background: white;
     border-color: #f4bf3d;
     border-style: double;
+    text-align: center;
 }
 .prev-btn:hover,.conf-btn:hover,.nxt-btn:hover,exe-btn:hover{
     background: #f4bf3d;
@@ -1552,3 +1553,4 @@ ul.instruction-tips li span{
     border:1px solid #f4bf3d;
     border-radius:6px;
 }
+.btn-bg{background-color: #f4bf3d;}

@@ -121,7 +121,8 @@ $altusr = F_altLogin();
 
 // --- check if login information has been submitted
 if (isset($_POST['logaction']) AND ($_POST['logaction'] == 'login') AND isset($_POST['xuser_name']) AND isset($_POST['xuser_password'])) {
-	$bruteforce = false;
+
+    $bruteforce = false;
 	if (K_BRUTE_FORCE_DELAY_RATIO > 0) {
 		// check login attempt from the current client device to avoid brute force attack
 		$bruteforce = true;
@@ -200,7 +201,9 @@ if (isset($_POST['logaction']) AND ($_POST['logaction'] == 'login') AND isset($_
 				}
 			}
 		}
+
 		if (!K_OTP_LOGIN OR $otp) {
+
 			// check if submitted login information are correct
 			$sql = 'SELECT * FROM '.K_TABLE_USERS.' WHERE user_name=\''.F_escape_sql($db, $_POST['xuser_name']).'\' AND user_password=\''.$xuser_password.'\'';
 			if ($r = F_db_query($sql, $db)) {
@@ -344,6 +347,7 @@ if ((K_AUTH_SSL_LEVEL !== false) AND (K_AUTH_SSL_LEVEL <= $pagelevel)) {
 
 // check user's level
 if ($pagelevel) { // pagelevel=0 means access to anonymous user
+
 	// pagelevel >= 1
 	if ($_SESSION['session_user_level'] < $pagelevel) { //check user level
 		// To gain access to a specific resource, the user's level must be equal or greater to the one specified for the requested resource.

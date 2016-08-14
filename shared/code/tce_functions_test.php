@@ -2029,11 +2029,16 @@ function F_questionsMenu($testdata, $testuser_id, $testlog_id = 0, $disable = fa
     if ($testlog_id_next > 0) {
         $qnext = '(' . ($qsel + 1) . ') ';
     }
-    $navlink .= '<input type="submit" name="nextquestion" id="nextquestion" class="nxt-btn" title="' . $l['w_next'] . '" value="' . $qnext . $l['w_next'] . ' &gt;"';
+    $navlink .= '<input type="submit" name="nextquestion" id="nextquestion" class="nxt-btn " title="' . $l['w_next'] . '" value="' . $qnext . $l['w_next'] . ' &gt;"';
     if ($testlog_id_next <= 0) {
         $navlink .= ' disabled="disabled"';
     }
     $navlink .= ' />' . K_NEWLINE;
+
+    $navlink .= '<input type="button" name="clearquestion" id="clearquestion" class="nxt-btn btn-bg" title="' . $l['w_next'] . '" value="'. $l['w_clear'] . '"';
+
+    $navlink .= ' onclick="clearForm()" />' . K_NEWLINE;
+
 
     if (($question_timer OR $disable) AND ( $testlog_id_next <= 0)) {
         // force test termination
@@ -2058,6 +2063,17 @@ function F_questionsMenu($testdata, $testuser_id, $testlog_id = 0, $disable = fa
         $rstr .= '<br />' . K_NEWLINE;
     }
     $rstr .= $navlink;
+
+    $rstr .= '<script> function clearForm(){   var inputs = document.getElementsByTagName("input") 
+for (index = 0; index < inputs.length; ++index) {
+            input = inputs.item(index)
+            if (input.type.toLowerCase() === "radio" || input.type.toLowerCase() === "checkbox") {
+                if(input.name.indexOf("answpos")>-1){
+                    input.checked = false;
+                }
+            }
+        }
+} </script>';
     return $rstr;
 }
 

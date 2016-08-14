@@ -38,6 +38,7 @@ $thispage_description = $l['hp_public_index'];
 
 require_once('../../shared/code/tce_authorization.php');
 require_once('tce_page_header.php');
+
 echo '<h1 class="heading-text">'.htmlspecialchars($thispage_title, ENT_NOQUOTES, $l['a_meta_charset']).'</h1>'.K_NEWLINE;
 echo '<div class="container">'.K_NEWLINE;
 
