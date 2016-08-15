@@ -48,6 +48,29 @@ $thispage_description = $l['hp_user_registration'];
 require_once('../code/tce_page_header.php');
 require_once('../../shared/code/tce_functions_form.php');
 
+function getRegNUmber($db){
+    $sql="SELECT user_id,user_regnumber FROM tce_users ORDER BY user_id DESC LIMIT 1";
+    if(!$r = F_db_query($sql, $db)) {
+        F_display_db_error(false);
+    }
+
+    while ($r and $row = F_db_fetch_array($r)) {
+        if (is_null($row['user_regnumber'])) {
+            $regnumber=0;
+        }else{
+            $regnumber = (int)substr($row['user_regnumber'], 2);
+        }
+    }
+    if($r){
+        $user_regnumber = "CS" . str_pad(++$regnumber, 5, "0", STR_PAD_LEFT);
+        return $user_regnumber;
+//        echo "<h5>" . $user_regnumber . K_NEWLINE . "</h5>";
+    }
+
+}
+
+
+
 if ($menu_mode == 'add') { // process submited data
 
 	foreach ($regfields as $name => $enabled) {
@@ -98,11 +121,12 @@ if ($menu_mode == 'add') { // process submited data
 			$user_ip = getNormalizedIP($_SERVER['REMOTE_ADDR']); // get the user's IP number
 			$user_regdate = date(K_TIMESTAMP_FORMAT); // get the registration date and time
 
-			if (K_USRREG_EMAIL_CONFIRM) {
+			/*if (K_USRREG_EMAIL_CONFIRM) {
 				$usrlevel = 0;
 			} else {
 				$usrlevel = 1;
-			}
+			}*/
+			$usrlevel=1;
 			$sql = 'INSERT INTO '.K_TABLE_USERS.' (
 				user_regdate,
 				user_ip,
@@ -193,9 +217,10 @@ if (isset($_REQUEST['user_password'])) {
 	$user_password = '';
 }
 if (isset($_REQUEST['user_regnumber'])) {
-	$user_regnumber = htmlspecialchars($_REQUEST['user_regnumber'], ENT_COMPAT, $l['a_meta_charset']);
+    $user_regnumber=getRegNUmber($db);
+//	$user_regnumber = htmlspecialchars($_REQUEST['user_regnumber'], ENT_COMPAT, $l['a_meta_charset']);
 } else {
-	$user_regnumber = '';
+	$user_regnumber = getRegNUmber($db);;
 }
 if (isset($_REQUEST['user_firstname'])) {
 	$user_firstname = htmlspecialchars($_REQUEST['user_firstname'], ENT_COMPAT, $l['a_meta_charset']);

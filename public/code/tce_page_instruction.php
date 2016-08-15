@@ -1,11 +1,10 @@
 <div id="dialog" title="Instructions">
     <div class="instruction-heading"><b>Please read the instruction carefully</b></div>
-    <b><u>General Instructions</u></b>
+    <b><u>General Instructions during the Examination</u></b>
     <ol>
-        <li>The clock will be set at server.The countdown timer at the top right corner of the screen will display the remaining time to complete your examination.
-            When the timer reaches zero the examination will end by itself.You will be not required to end or submit your examination.
+        <li>Total duration of the examination is 45 minutes.
         </li>
-        <li>The question panel displayed on the right side of the screen will show the status of each question with following symbols:
+        <li>The Question Palette displayed on the right side of screen will show the status of each question using one of the following coloured boxes:
             <ul class="instruction-tips">
                 <li>
                     <span class="white">15</span> You have not visited the question yet.
@@ -32,4 +31,11 @@
         <li>To answer the question select any of the option and then select <b>Confirm</b> button to confirm answer.</li>
         <li>To terminate the exam write the comment in the comment box and click <b>Terminate the exam</b> button.</li>
     </ol>
+    <ol>Multiple choice type questions will have four choices against A, B, C, D, out of which only ONE is the correct answer. The candidate has to choose the correct answer by clicking on the
+        bubble (⃝) placed before the choice.</ol>
+    <ol> In this paper a candidate can answer a total of 15 questions carrying 25 marks. Out of which, 5 questions carrying 1 mark each and 10 questions carrying 2 marks each. All questions are
+        Multiple Choice Questions (MCQ).</ol>
+    <ol>All questions that are not attempted will result in zero marks. However, wrong answers will result in NEGATIVE marks. For all questions a wrong answer will result in deduction of 0.33 marks for a 1 mark question and 0.66 for a 2 mark question.</ol>
+    <ol>You can click on Terminate the exam to submit your responses and end the examination.</ol>
+    <strong>ALL THE BEST!!!</strong>
 </div>

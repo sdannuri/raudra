@@ -75,7 +75,7 @@ function F_loginForm($faction, $fid, $fmethod, $fenctype, $username) {
 	$str .= '<input type="hidden" name="logaction" id="logaction" value="login" />'.K_NEWLINE;
 	$str .= '</div>'.K_NEWLINE;
          if (K_USRREG_ENABLED) {
-		$str .= '<small><a href="../../public/code/tce_user_registration.php" title="'.$l['t_user_registration'].'" class="reg-link">'.$l['w_user_registration_link'].'</a></small>'.K_NEWLINE;
+		//$str .= '<small><a href="../../public/code/tce_user_registration.php" title="'.$l['t_user_registration'].'" class="reg-link">'.$l['w_user_registration_link'].'</a></small>'.K_NEWLINE;
 	}
 	$str .= '</form>'.K_NEWLINE;
         $str.="</div>";

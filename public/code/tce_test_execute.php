@@ -170,7 +170,7 @@ if (isset($_REQUEST['testid']) AND ($_REQUEST['testid'] > 0)) {
 			<input type="hidden" name="display_time" id="display_time" value="" />
 			<input type="hidden" name="reaction_time" id="reaction_time" value="" />
 			<?php
-			F_submit_button('forceterminate', $l['w_terminate'], $l['w_terminate_exam']);
+			F_submit_button('forceterminate', 'SUBIT', 'SUBMIT');
 			F_submit_button('cancel', $l['w_cancel'], $l['h_cancel']);
 			?>
 			</div>
@@ -198,11 +198,11 @@ if (isset($_REQUEST['testid']) AND ($_REQUEST['testid'] > 0)) {
 			echo '<input type="hidden" name="display_time" id="display_time" value="" />'.K_NEWLINE;
 			echo '<input type="hidden" name="reaction_time" id="reaction_time" value="" />'.K_NEWLINE;
 
-			// textarea field for user's comment
-			echo '<span class="testcomment">'.F_testComment($test_id).K_NEWLINE;
+			/*// textarea field for user's comment
+			echo '<span class="testcomment">'.F_testComment($test_id).K_NEWLINE;*/
 
 			// test termination button
-			F_submit_button('terminatetest', $l['w_terminate_exam'], $l['w_terminate_exam']);
+			F_submit_button('terminatetest', 'SUBMIT', 'SUBMIT');
                         echo  "</span>";
 			echo K_NEWLINE;
 			echo '</div>'.K_NEWLINE;

@@ -296,12 +296,12 @@ To start installation fill the form below and click the INSTALL button.<br />
 </span>
 </div>
 
-<div class="row">
+<!--<div class="row">
 <span class="label">
 <label for="drop_existing" title="Drop Existing Database?">Drop Existing Database?</label>
 </span>
 <span class="formw">
-<input type="checkbox" name="drop_existing" id="drop_existing" value="1" <?PHP echo $drop_existing ? 'checked="checked"' : ''; ?>"/>
+<input type="checkbox" name="drop_existing" id="drop_existing" value="" <?PHP /*echo $drop_existing ? 'checked="checked"' : ''; */?>"/>
 </span>
 </div>
 
@@ -310,9 +310,9 @@ To start installation fill the form below and click the INSTALL button.<br />
 <label for="create_new" title="Create New Database?">Create New Database?</label>
 </span>
 <span class="formw">
-<input type="checkbox" name="create_new" id="create_new" value="1" <?PHP echo $create_new ? 'checked="checked"' : ''; ?>"/>
+<input type="checkbox" name="create_new" id="create_new" value="" <?PHP /*echo $create_new ? 'checked="checked"' : ''; */?>"/>
 </span>
-</div>
+</div>-->
 
 <div class="row">
 <input type="hidden" name="forceinstall" id="forceinstall" value="" />

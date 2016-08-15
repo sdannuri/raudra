@@ -30,6 +30,27 @@
 /**
  */
 
+function getRegNUmber($db){
+	$sql="SELECT user_id,user_regnumber FROM tce_users ORDER BY user_id DESC LIMIT 1";
+	if(!$r = F_db_query($sql, $db)) {
+		F_display_db_error(false);
+	}
+
+	while ($r and $row = F_db_fetch_array($r)) {
+		if (is_null($row['user_regnumber'])) {
+			$regnumber=0;
+		}else{
+			$regnumber = (int)substr($row['user_regnumber'], 2);
+		}
+	}
+	if($r){
+		$user_regnumber = "CS" . str_pad(++$regnumber, 5, "0", STR_PAD_LEFT);
+		return $user_regnumber;
+//        echo "<h5>" . $user_regnumber . K_NEWLINE . "</h5>";
+	}
+
+}
+
 require_once('../config/tce_config.php');
 
 $pagelevel = K_AUTH_ADMIN_USERS;
@@ -252,6 +273,7 @@ switch($menu_mode) { // process submitted data
 
 			$user_ip = getNormalizedIP($_SERVER['REMOTE_ADDR']); // get the user's IP number
 			$user_regdate = date(K_TIMESTAMP_FORMAT); // get the registration date and time
+			$user_regnumber=getRegNUmber($db);
 
 			$sql = 'INSERT INTO '.K_TABLE_USERS.' (
 				user_regdate,
@@ -453,7 +475,8 @@ echo getFormRowTextInput('newpassword_repeat', $l['w_password'], $l['h_password_
 echo getFormRowFixedValue('user_regdate', $l['w_regdate'], $l['h_regdate'], '', $user_regdate);
 echo getFormRowFixedValue('user_ip', $l['w_ip'], $l['h_ip'], '', $user_ip);
 echo getFormRowSelectBox('user_level', $l['w_level'], $l['h_level'], '', $user_level, array(0,1,2,3,4,5,6,7,8,9,10));
-echo getFormRowTextInput('user_regnumber', $l['w_regcode'], $l['h_regcode'], '', $user_regnumber, '', 255, false, false, false);
+echo getFormRowFixedValue('user_regnumber', $l['w_regcode'], $l['h_regcode'], '', $user_regnumber);
+//echo getFormRowTextInput('user_regnumber', $l['w_regcode'], $l['h_regcode'], '', $user_regnumber, '', 255, false, false, false);
 echo getFormRowTextInput('user_firstname', $l['w_firstname'], $l['h_firstname'], '', $user_firstname, '', 255, false, false, false);
 echo getFormRowTextInput('user_lastname', $l['w_lastname'], $l['h_lastname'], '', $user_lastname, '', 255, false, false, false);
 echo getFormRowTextInput('user_birthdate', $l['w_birth_date'], $l['h_birth_date'].' '.$l['w_date_format'], '', $user_birthdate, '', 10, true, false, false);
