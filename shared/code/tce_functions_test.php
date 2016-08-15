@@ -68,7 +68,7 @@ function F_getUserTests() {
                 } else {
                     $str .= '<td>';
                 }
-                $str .= '<strong>' . F_testInfoLink($m['test_id'], $m['test_name']) . '</strong></td>' . K_NEWLINE;
+                $str .= '<strong>' . F_testInfoLink($m['test_id'], ucfirst($m['test_name'])) . '</strong></td>' . K_NEWLINE;
                 $str .= '<td' . $datestyle . '>' . $m['test_begin_time'] . '</td>' . K_NEWLINE;
                 $str .= '<td' . $datestyle . '>' . $m['test_end_time'] . '</td>' . K_NEWLINE;
                 // status
@@ -101,8 +101,10 @@ function F_getUserTests() {
                 $str .= '</td>' . K_NEWLINE;
                 // display various action links by status case
                 $str .= '<td style="text-align:center;">';
+
                 if (!$expired) {
                     switch ($test_status) {
+
                         case 0: { // 0 = the test generation process is started but not completed
                                 // print execute test link
                                 $str .= '<a href="';
@@ -139,6 +141,15 @@ function F_getUserTests() {
                                 break;
                             }
                     }
+                }
+                if (isset($usrtestdata['user_score']) AND ( strlen('' . $usrtestdata['user_score']) > 0)) {
+                    if ($usrtestdata['test_max_score'] > 0) {
+                        $str .= '<a href="tce_show_result_user.php?testuser_id=' . $testuser_id . '&amp;test_id=' . $m['test_id'] . '" title="' . $l['h_result'] . '" class="buttongrey">' .  'View Result</a>';
+                    } else {
+                        $str .= '<a href="tce_show_result_user.php?testuser_id=' . $testuser_id . '&amp;test_id=' . $m['test_id'] . '" title="' . $l['h_result'] . '" class="buttongrey">' . 'View Result' . '</a>';
+                    }
+                } else {
+                    $str .= '&nbsp;';
                 }
                 $str .= '</td>' . K_NEWLINE;
                 $str .= '</tr>' . K_NEWLINE;

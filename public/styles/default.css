@@ -954,19 +954,23 @@ iframe.menu {
 table.testlist {
     background-color: white;
     border: 1px solid #808080;
-    margin: 10px 0px 10px 360px;
+   /* margin: 10px 0px 10px 360px;*/
     padding: 0px 0px 0px 0px;
 }
 
 table.testlist td {
     border: 1px solid black;
-    padding: 14px 13px 15px 4px;
+    /*padding: 14px 13px 15px 4px;*/
+    padding: 15px;
 }
 
 table.testlist th {
     border: 1px solid #000;
-    padding: 4px 4px 4px 4px;
-    background-color: #E1E1E1;
+    /*padding: 4px 4px 4px 4px;*/
+    padding: 15px;
+    /*background-color: #E1E1E1;*/
+    background-color: #323232;
+    color:#FFFFFF;
     /*DRC*/
     text-align: center;
 }
@@ -1560,3 +1564,5 @@ ul.instruction-tips li span{
 .question .answer li{padding:1% !important;}
 .question li{padding: 1% !important;}
 .tceformbox div.row span.label{text-align: left !important;padding: 0px 1px 0px 15px;}
+a.buttongrey:link, a.buttongrey:visited{background-color: #a8a8a8;border-radius: 6px;border: 1px solid;border-color: #a8a8a8;color: #FFFFFF;font-size: 95%;margin: 0px 0px 0px 5px;padding: 5px 10px;text-decoration: none;}
+.testlist tr:nth-child(even) {background: #CCC}
