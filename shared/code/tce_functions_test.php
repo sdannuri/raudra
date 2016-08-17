@@ -162,8 +162,8 @@ function F_getUserTests() {
         $out = '<table class="testlist" align="center">' . K_NEWLINE;
         $out .= '<tr>' . K_NEWLINE;
         $out .= '<th>' . $l['w_test'] . '</th>' . K_NEWLINE;
-        $out .= '<th>' . $l['w_from'] . '</th>' . K_NEWLINE;
-        $out .= '<th>' . $l['w_to'] . '</th>' . K_NEWLINE;
+        $out .= '<th>' . 'Starts From' . '</th>' . K_NEWLINE;
+        $out .= '<th>' . 'Expires On'. '</th>' . K_NEWLINE;
         $out .= '<th>' . $l['w_status'] . '</th>' . K_NEWLINE;
         $out .= '<th>' . $l['w_action'] . '</th>' . K_NEWLINE;
         $out .= '</tr>' . K_NEWLINE;

@@ -1,3 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+        .error {color: #FF0000;}
+    </style>
+</head>
+<body>
+
+<?php
+// define variables and set to empty values
+$emailErr = $serverErr ="";
+$email = $server="";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["email"])) {
+        $emailErr = "Email is required";
+    } else {
+        $emails = array();
+        $delim = " \n,";
+        $tok = strtok($_POST["email"], $delim);
+        while ($tok !== false) {
+            $tok = test_input($tok);
+            if (!filter_var($tok, FILTER_VALIDATE_EMAIL)) {
+                $emailErr = "Invalid email format";
+            }else{
+                $emails[] = $tok;
+            }
+            $tok = strtok($delim);
+        }
+        $email = array_unique($emails);
+    }
+}
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+?>
+
+<?php
+echo "<h4>Your Input mails are:</h4><p>";
+
+foreach ($email as $value){
+    echo  $value. "</br>";
+}
+echo "</p>";
+?>
+
+<h2>GATExcel-135 Registrations</h2>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" id="emailsform">
+    E-mails(camma separated or each eamil in a line):</br><textarea name="email" rows="5" cols="40"><?php /*echo $comment;*/?></textarea>
+    <span class="error"> <?php echo $emailErr;?></span>
+    <br><br>
+    <input type="submit" name="submit" value="Submit">
+</form>
+
+
+
 <?php
 
 define ('K_TABLE_PREFIX', 'tce_');
@@ -73,40 +133,45 @@ function IsEmptyString($val){
 function sendmailer($to,$username,$pass){
     require_once '../swift/lib/swift_required.php';
 
+    $server="http://".$_SERVER['HTTP_HOST']."/";
     $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
-        ->setUsername('raudra.gatexcel@gmail.com ')
+        ->setUsername('gatexcel2017@gmail.com')
         ->setPassword('Incorrect.5');
 
     $mailer = Swift_Mailer::newInstance($transport);
 
-    $message = "<h2>It starts today</h2>";
-    $message .="<p>Hi,</br> Happy Independence Day guys ... Yes its time for our gate test series, THE first test is waiting for you on this Independence Day... please find your credentials for the test series GATExcel135 below</p>";
+    $message = "<h2>Welcome to GATExcel-135</h2>";
+    $message .="<p>Hi,</br> Please find your credentials for the test series GATExcel135 below</p>";
     $message .="<ul>
                 <li>User Name : ".$username."</li>
                 <li>Password : ".$pass."</li>
                 </ul>";
     $message.="<p> you can login to your account with these credentials and change your password. Username can't be changed </p>";
-    $message.="<p> you can take test <a href='http://ec2-52-66-120-208.ap-south-1.compute.amazonaws.com/'>HERE</a></p>";
+    $message.="<p> you can take test <a href='".$server."'>HERE</a></p>";
     $message.-"<p> We suggest you to take tests preferrably on laptop/desktop computers for better user experience.</p>";
     $message.="<p> Wish you all the best :)</p>";
+
+
     $body = Swift_Message::newInstance('GATExcel135 starts today :)')
-        ->setFrom(array('raudra.gatexcel@gmail.com' => 'RavindraBabu Ravula'))
+        ->setFrom(array('brahma0545@gmail.com' => 'Ravindra Babu Ravula'))
         ->setTo(array($to))
         ->setBody($message,'text/html');
 
     $result = $mailer->send($body);
-    echo  $result;
+    if($result){
+        echo  "Mail Sent to <i>".$to."</i>";
+    }
+
 }
 
-$fh=fopen('users.txt','r');
-//$i=0;
+foreach ($email as $value){
 
-while ($line=fgets($fh)) {
+    echo $value;
 
-    $user_name = strtok($line, '@');
-    $user_email = $line;
+    $user_name = strtok($value, '@');
+    $user_email = $value;
 
-    echo "<h4 style=\"color:#f1a899\">" . $user_name . K_NEWLINE . "</h4>";
+    echo "<h3 style=\"color:#122afc\">" . $user_name . K_NEWLINE . "</h3>";
 
     $newpassword = generateRandomString();
     $user_password = getPasswordHash($newpassword);
@@ -114,15 +179,8 @@ while ($line=fgets($fh)) {
 
     $abcpassword=getPasswordHash($newpassword);
 
-//    $original_password = getPasswordHash($user_password);
-
-    echo "<h5 >" . $newpassword . K_NEWLINE . "</h5>";
-//    echo "<h5 >" . $user_password . K_NEWLINE . "</h5>";
-//    echo "<h5 >" . $abcpassword . K_NEWLINE . "</h5>";
-
 
     $user_level = 1;
-//    $user_regnumber = "CS" . str_pad($i++, 5, "0", STR_PAD_LEFT);
 
     $sql="SELECT user_id,user_regnumber FROM tce_users ORDER BY user_id DESC LIMIT 1";
     $r=mysql_query($sql,$db);
@@ -136,7 +194,6 @@ while ($line=fgets($fh)) {
     }
     if($r){
         $user_regnumber = "CS" . str_pad(++$regnumber, 5, "0", STR_PAD_LEFT);
-        echo "<h5>" . $user_regnumber . K_NEWLINE . "</h5>";
     }
 
 
@@ -179,15 +236,19 @@ while ($line=fgets($fh)) {
 				\'' . IsEmptyString($user_otpkey) . '\'
 				)';
 
-//    echo "<h5>" . $sql . K_NEWLINE . "</h5>";
-    $r = mysql_query($sql, $db) OR die("Error:".mysql_error());
+    $r = mysql_query($sql, $db);
     if(!$r){
-        echo "error in inserting query in bulk reg";
+        echo  "Error in inserting user in users:".mysql_error();
+        continue;
     }
 
     $sql="SELECT user_id FROM ".K_TABLE_USERS." WHERE user_name='".stripslashes(rtrim($user_name))."'";
-//    echo "<h5>" . $sql . K_NEWLINE . "</h5>";
+    echo "<h5>" . $sql . K_NEWLINE . "</h5>";
     $r=mysql_query($sql,$db);
+    if(!$r){
+        echo  "Error in getting user_id:".mysql_error();
+        continue;
+    }
 
     while ($r and $row = mysql_fetch_assoc($r)) {
         $user_id=$row['user_id'];
@@ -195,7 +256,6 @@ while ($line=fgets($fh)) {
 
 
     $sql="SELECT group_id FROM ".K_TABLE_USER_GROUP." WHERE group_name='GateExcel135'";
-//    echo "<h5>" . $sql . K_NEWLINE . "</h5>";
     $r=mysql_query($sql,$db);
     while ($r and $row = mysql_fetch_assoc($r)) {
         $group_id=$row['group_id'];
@@ -210,15 +270,17 @@ while ($line=fgets($fh)) {
 					)';
 
     $r = mysql_query($sql, $db);
-
-
-
+    if(!$r){
+        echo  "Error insertion of user in groups:".mysql_error();
+        continue;
+    }
     if($r){
-        echo "<h4>mail sent to :".stripslashes(rtrim($user_email))."</h4>";
+        echo "<h4 >User Name : <b>" .$user_name ."</b> </br>Passowrd : ". $newpassword ." </br>Registration Number : <i> ". $user_regnumber . K_NEWLINE ."</i></h4>";
         sendmailer(stripslashes(rtrim($user_email)),stripslashes(rtrim($user_name)),stripslashes(rtrim($newpassword)));
     }
 }
-fclose($fh);
 
 
 ?>
+</body>
+</html>

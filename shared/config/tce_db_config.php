@@ -55,7 +55,7 @@ define ('K_DATABASE_USER_NAME', 'root');
 /**
  * database user password
  */
-define ('K_DATABASE_USER_PASSWORD', 'ramesh123');
+define ('K_DATABASE_USER_PASSWORD', 'raudra');
 
 /**
  * prefix for database tables names
