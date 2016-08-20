@@ -178,6 +178,12 @@ if (!isset($_REQUEST['test_max_score'])) {
 	$test_max_score = floatval($_REQUEST['test_max_score']);
 }
 
+if(!isset($_REQUEST['test_comments'])){
+    $test_comments = "";
+}
+else{
+    $test_comments = $_REQUEST["test_comments"];
+}
 $test_max_score_new = 0; // test max score
 $qtype = array('S', 'M', 'T', 'O'); // question types
 $qordmode = array($l['w_position'], $l['w_alphabetic'], $l['w_id'], $l['w_type'], $l['w_subject']);
@@ -495,8 +501,27 @@ switch($menu_mode) {
 				WHERE test_id='.$test_id.'';
 			if (!$r = F_db_query($sql, $db)) {
 				F_display_db_error(false);
-			} else {
+                               
+			} else {                           
 				F_print_error('MESSAGE', $l['m_updated']);
+                              
+                                 $query = "SELECT * FROM ".K_TABLE_TEST_COMMENTS." WHERE test_id=".$test_id;
+                                $res= F_db_query($query, $db);
+                               
+                                if(F_db_num_rows($res) == 0){
+                                   
+                                    $sql  = 'INSERT INTO '.K_TABLE_TEST_COMMENTS.'('
+                                    . 'comments,test_id) VALUES("'.$test_comments.'",'.$test_id.')';
+                                    if (!$r = F_db_query($sql, $db)) {
+                                            F_display_db_error(false);
+                                    }
+                                }else{
+                                   
+                                    $sql = "UPDATE ".K_TABLE_TEST_COMMENTS." SET comments='".$test_comments."' WHERE test_id=".$test_id;
+                                    if (!$r = F_db_query($sql, $db)) {
+                                            F_display_db_error(false);
+                                    }
+                                }
 			}
 
 			// delete previous groups
@@ -627,6 +652,13 @@ switch($menu_mode) {
 			} else {
 				$test_id = F_db_insert_id($db, K_TABLE_TESTS, 'test_id');
 			}
+                        if(!empty($test_id)){
+                            $sql  = 'INSERT INTO '.K_TABLE_TEST_COMMENTS.'('
+                                    . 'comments,test_id) VALUES("'.$test_comments.'",'.$test_id.')';
+                            if (!$r = F_db_query($sql, $db)) {
+                                    F_display_db_error(false);
+                            }
+                        }
 			// add authorized user's groups
 			if (!empty($user_groups)) {
 				foreach ($user_groups as $group_id) {
@@ -714,6 +746,7 @@ switch($menu_mode) {
 	}
 
 	case 'clear':{ // Clear form fields
+                $test_comments = "";
 		$test_name = '';
 		$test_description = '';
 		$test_begin_time = date(K_TIMESTAMP_FORMAT);
@@ -759,6 +792,7 @@ if (!isset($test_num) OR (!empty($test_num))) {
 if ($formstatus) {
 	if ($menu_mode != 'clear') {
 		if (!isset($test_id) OR empty($test_id)) {
+                        $test_comments = "";
 			$test_id = 0;
 			$test_name = '';
 			$test_description = '';
@@ -790,6 +824,11 @@ if ($formstatus) {
 		} else {
 			$sql = 'SELECT * FROM '.K_TABLE_TESTS.' WHERE test_id='.$test_id.' LIMIT 1';
 			if ($r = F_db_query($sql, $db)) {
+                            $sql1 = "SELECT * FROM ".K_TABLE_TEST_COMMENTS." WHERE test_id=".$test_id." LIMIT 1";
+                            if($res = F_db_query($sql1, $db)){
+                                $rec = F_db_fetch_array($res);
+                                $test_comments = $rec["comments"];
+                            }
 				if ($m = F_db_fetch_array($r)) {
 					$test_id = $m['test_id'];
 					$test_name = $m['test_name'];
@@ -1044,7 +1083,7 @@ echo getFormRowCheckBox('test_repeatable', $l['w_repeatable'], '', '', 1, $test_
 echo getFormRowCheckBox('test_logout_on_timeout', $l['w_logout_on_timeout'], '', '', 1, $test_logout_on_timeout, false);
 
 echo getFormRowTextInput('new_test_password', $l['w_password'], $l['h_test_password'], ' ('.$l['d_password_lenght'].')', '', '^([a-zA-Z0-9]{8,32})$', 255, false, false, true);
-
+echo getFormRowTextBox('test_comments', $l['w_add_comments'], $l['h_test_comments'], $test_comments, false);
 echo '<div class="row btn_cls">'.K_NEWLINE;
 echo '<br />'.K_NEWLINE;
 echo '<input type="hidden" name="test_password" id="test_password" value="'.$test_password.'" />'.K_NEWLINE;
