@@ -106,7 +106,8 @@ function F_getBoolean($str) {
  * @return bool true if unique, false otherwise
  */
 function F_check_unique($table, $where, $fieldname=FALSE, $fieldid=FALSE) {
-	require_once('../config/tce_config.php');
+    return true;
+	/*require_once('../config/tce_config.php');
 	global $l, $db;
 	$sqlc = 'SELECT * FROM '.$table.' WHERE '.$where.' LIMIT 1';
 	if ($rc = F_db_query($sqlc, $db)) {
@@ -125,7 +126,7 @@ function F_check_unique($table, $where, $fieldname=FALSE, $fieldid=FALSE) {
 		F_display_db_error();
 	}
 	// another table row contains the same values
-	return FALSE;
+	return FALSE;*/
 }
 
 /**
