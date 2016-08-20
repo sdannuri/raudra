@@ -60,7 +60,7 @@ function F_getUserTests() {
                 if(F_db_num_rows($resultset)>0){
                     $record = F_db_fetch_array($resultset);
                   
-                    $comments = $record["comments"];
+                    $comments = '<a href="" class="buttongrey">View Comments</a>';
                 }
                 // the user's IP is valid, check test status
                 list ($test_status, $testuser_id) = F_checkTestStatus($user_id, $m['test_id'], $m['test_duration_time']);
@@ -178,7 +178,7 @@ function F_getUserTests() {
         $out .= '<th>' . $l['w_from'] . '</th>' . K_NEWLINE;
         $out .= '<th>' . $l['w_to'] . '</th>' . K_NEWLINE;
         $out .= '<th>' . $l['w_status'] . '</th>' . K_NEWLINE;
-        $out .= '<th width="30%">' . $l['w_comments'] . '</th>' . K_NEWLINE;
+        $out .= '<th>' . $l['w_comments'] . '</th>' . K_NEWLINE;
         $out .= '<th>' . $l['w_action'] . '</th>' . K_NEWLINE;
         
         $out .= '</tr>' . K_NEWLINE;
