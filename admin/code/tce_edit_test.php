@@ -1083,7 +1083,22 @@ echo getFormRowCheckBox('test_repeatable', $l['w_repeatable'], '', '', 1, $test_
 echo getFormRowCheckBox('test_logout_on_timeout', $l['w_logout_on_timeout'], '', '', 1, $test_logout_on_timeout, false);
 
 echo getFormRowTextInput('new_test_password', $l['w_password'], $l['h_test_password'], ' ('.$l['d_password_lenght'].')', '', '^([a-zA-Z0-9]{8,32})$', 255, false, false, true);
-echo getFormRowTextBox('test_comments', $l['w_add_comments'], $l['h_test_comments'], $test_comments, false);
+//echo getFormRowTextBox('test_comments', $l['w_add_comments'], $l['h_test_comments'], $test_comments, false);
+echo '<div class="row">'.K_NEWLINE;
+
+echo '<span class="label">'.K_NEWLINE;
+echo '<label for="sslcerts">'.$l['h_test_comments'].'&nbsp;</label>'.K_NEWLINE;
+echo '</span>'.K_NEWLINE;
+echo '<span class="formw edit_box">'.K_NEWLINE;
+echo '<textarea cols="56" rows="5" name="test_comments" id="test_comments" onselect="FJ_update_selection(document.getElementById(\'form_subjecteditor\').test_comments)" title="'.$l['h_test_comments'].'"';
+if (K_ENABLE_VIRTUAL_KEYBOARD) {
+	echo ' class="keyboardInput"';
+}
+echo '>'.htmlspecialchars($test_comments, ENT_NOQUOTES,"").'</textarea>'.K_NEWLINE;
+echo '<br />'.K_NEWLINE;
+echo tcecodeEditorTagButtons('form_subjecteditor', 'h_test_comments');
+echo '</span>'.K_NEWLINE;
+echo '</div>'.K_NEWLINE;
 echo '<div class="row btn_cls">'.K_NEWLINE;
 echo '<br />'.K_NEWLINE;
 echo '<input type="hidden" name="test_password" id="test_password" value="'.$test_password.'" />'.K_NEWLINE;
