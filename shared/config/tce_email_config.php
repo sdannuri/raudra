@@ -49,7 +49,7 @@ $emailcfg['AdminEmail'] = '';
 $emailcfg['From'] = 'ramesh.dannuri@raudra.co.in';
 
 // Sets the From name of the message. Default value is 'Root User'.
-$emailcfg['FromName'] = 'TCExam';
+$emailcfg['FromName'] = 'GATExcel 135';
 
 // Sets the Sender email of the message. If not empty, will be sent via -f to sendmail * or as 'MAIL FROM' in smtp mode. Default value is ''.
 $emailcfg['Sender'] = '';
@@ -117,7 +117,7 @@ $emailcfg['SMTPDebug'] = false;
 
 // Sets plugins directory path
 $emailcfg['PluginDir'] = '../../shared/phpmailer/';
-
+TCExam
 //============================================================+
 // END OF FILE
 //============================================================+
