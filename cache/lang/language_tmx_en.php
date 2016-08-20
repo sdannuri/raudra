@@ -639,6 +639,7 @@ $tmx['w_back_index'] = 'Back To Home';
 $tmx['w_add_comments'] = 'Comments';
 $tmx['h_test_comments'] = 'Test Comments';
 $tmx['w_comments'] = 'Comments';
+$tmx['t_user_view_comments'] = 'View Comments';
 
 
 
