@@ -99,6 +99,7 @@ $emailcfg['Helo'] = '';
 // Sets SMTP authentication. Remember to set the Username and Password. Default value is false (off).
 $emailcfg['SMTPAuth'] = true;
 
+
 // Sets the prefix to the server. Options are '', 'ssl' or 'tls'.
 $emailcfg['SMTPSecure'] = '';
 
