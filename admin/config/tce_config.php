@@ -1,4 +1,5 @@
 <?php
+ini_set("display_errors",false);
 //============================================================+
 // File name   : tce_config.php
 // Begin       : 2001-09-02
