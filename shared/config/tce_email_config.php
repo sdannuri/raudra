@@ -46,7 +46,7 @@ $emailcfg['AttachmentsEncoding'] = 'base64';
 $emailcfg['AdminEmail'] = '';
 
 // Sets the From email address for the message. Default value is 'root@localhost'.
-$emailcfg['From'] = '';
+$emailcfg['From'] = 'ramesh.dannuri@raudra.co.in';
 
 // Sets the From name of the message. Default value is 'Root User'.
 $emailcfg['FromName'] = 'TCExam';
@@ -88,10 +88,10 @@ $emailcfg['MsgFooter'] = '</body></html>';
 // -----------------------------------------------------------------------------
 
 // Sets the SMTP hosts. All hosts must be separated by a semicolon (e.g. Host("smtp1.domain.com;smtp2.domain.com"). Hosts will be tried in order.
-$emailcfg['Host'] = 'smtp.gmail.com';
+$emailcfg['Host'] = 'mail.raudra.co.in';
 
 // Sets the SMTP server port. Default value is 25.
-$emailcfg['Port'] = 465;
+$emailcfg['Port'] = 25;
 
 // Default value is 'localhost.localdomain'.
 $emailcfg['Helo'] = '';
@@ -100,13 +100,13 @@ $emailcfg['Helo'] = '';
 $emailcfg['SMTPAuth'] = true;
 
 // Sets the prefix to the server. Options are '', 'ssl' or 'tls'.
-$emailcfg['SMTPSecure'] = 'ssl';
+$emailcfg['SMTPSecure'] = '';
 
 // Sets SMTP username. Default value is ''.
-$emailcfg['Username'] = '';
+$emailcfg['Username'] = 'ramesh.dannuri@raudra.co.in';
 
 // Sets SMTP password. Default value is ''.
-$emailcfg['Password'] = '';
+$emailcfg['Password'] = 'raudra@123';
 
 // Sets the SMTP server timeout in seconds.
 $emailcfg['Timeout'] = 10;
