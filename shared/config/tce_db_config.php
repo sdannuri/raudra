@@ -55,7 +55,7 @@ define ('K_DATABASE_USER_NAME', 'root');
 /**
  * database user password
  */
-define ('K_DATABASE_USER_PASSWORD', 'ramesh123');
+define ('K_DATABASE_USER_PASSWORD', 'raudra');
 
 /**
  * prefix for database tables names
@@ -155,6 +155,8 @@ define ('K_TABLE_SSLCERTS', K_TABLE_PREFIX.'sslcerts');
  * This table contains the list of SSL certificates enabled for a selected test.
  */
 define ('K_TABLE_TEST_SSLCERTS', K_TABLE_PREFIX.'testsslcerts');
+
+define ('K_TABLE_TEST_COMMENTS', K_TABLE_PREFIX.'comments');
 
 //============================================================+
 // END OF FILE
