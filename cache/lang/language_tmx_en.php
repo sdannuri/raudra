@@ -636,6 +636,9 @@ $tmx['title_marks_correct_ans'] = 'Marks for correct answer';
 $tmx['w_negative_marks'] = 'Negative Marks';
 $tmx['title_negative_marks'] = 'Negative Marks';
 $tmx['w_back_index'] = 'Back To Home';
+$tmx['w_add_comments'] = 'Comments';
+$tmx['h_test_comments'] = 'Test Comments';
+$tmx['w_comments'] = 'Comments';
 
 
 
