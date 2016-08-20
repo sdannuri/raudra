@@ -53,6 +53,15 @@ function F_getUserTests() {
             $expired = false;
             // check user's authorization
             if (F_isValidTestUser($m['test_id'], $_SESSION['session_user_ip'], $m['test_ip_range'])) {
+                 $comments = "";
+                 
+                $query = "SELECT *FROM ".K_TABLE_TEST_COMMENTS." WHERE test_id=".$m['test_id'];
+                $resultset = F_db_query($query, $db);
+                if(F_db_num_rows($resultset)>0){
+                    $record = F_db_fetch_array($resultset);
+                  
+                    $comments = $record["comments"];
+                }
                 // the user's IP is valid, check test status
                 list ($test_status, $testuser_id) = F_checkTestStatus($user_id, $m['test_id'], $m['test_duration_time']);
                 if (strtotime($current_time) >= strtotime($m['test_end_time'])) {
@@ -99,6 +108,9 @@ function F_getUserTests() {
                     $str .= '>&nbsp;';
                 }
                 $str .= '</td>' . K_NEWLINE;
+               
+                $str .= '<td>'.$comments.K_NEWLINE;
+                $str .= '</td>'.K_NEWLINE;
                 // display various action links by status case
                 $str .= '<td style="text-align:center;">';
 
@@ -152,6 +164,7 @@ function F_getUserTests() {
                     $str .= '&nbsp;';
                 }
                 $str .= '</td>' . K_NEWLINE;
+               
                 $str .= '</tr>' . K_NEWLINE;
             }
         }
@@ -165,7 +178,9 @@ function F_getUserTests() {
         $out .= '<th>' . $l['w_from'] . '</th>' . K_NEWLINE;
         $out .= '<th>' . $l['w_to'] . '</th>' . K_NEWLINE;
         $out .= '<th>' . $l['w_status'] . '</th>' . K_NEWLINE;
+        $out .= '<th width="30%">' . $l['w_comments'] . '</th>' . K_NEWLINE;
         $out .= '<th>' . $l['w_action'] . '</th>' . K_NEWLINE;
+        
         $out .= '</tr>' . K_NEWLINE;
         $out .= $str;
         $out .= '</table>' . K_NEWLINE;
