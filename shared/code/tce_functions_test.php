@@ -60,7 +60,8 @@ function F_getUserTests() {
                 if(F_db_num_rows($resultset)>0){
                     $record = F_db_fetch_array($resultset);
                   
-                    $comments = '<a href="" class="buttongrey">View Comments</a>';
+                    
+                    $comments = '<a href="tce_view_comments.php?test_id='.$m['test_id'].'" class="buttongrey">View Comments</a>';
                 }
                 // the user's IP is valid, check test status
                 list ($test_status, $testuser_id) = F_checkTestStatus($user_id, $m['test_id'], $m['test_duration_time']);
