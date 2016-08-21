@@ -1,9 +1,7 @@
---- START LOG: 2016-08-15 15:15:28 ---
+--- START LOG: 2016-08-21 10:58:52 ---
 [START] database installation
   create or replace database and get connection
-  [START] create database tables
-    [SQL] 0
-  [END:ERROR] create database tables: [1050]: Table 'tce_sessions' already exists
+  [END:ERROR] could not connect to database: 
 [END] database installation
 [START] update config files
   [START] process file: tce_db_config.php
@@ -30,4 +28,4 @@
     close file [OK]
   [END] process file: tce_paths.php
 [END] update config files
---- END LOG: 2016-08-15 15:15:29 ---
+--- END LOG: 2016-08-21 10:58:53 ---

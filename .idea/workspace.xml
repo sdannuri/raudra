@@ -2,399 +2,357 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3372175-62d3-4a36-81ac-ea4dc40c7cca" name="Default" comment="explation moved to blelow the options">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/doc/uml/Encoders.graffle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/doc/uml/Mime.graffle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/doc/uml/Transports.graffle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/files/swiftmailer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/files/textfile.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/edits/tce_bulk_registrations.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/edits/users.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/.gitattributes" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/CHANGES" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/VERSION" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/doc/headers.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/doc/help-resources.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/doc/including-the-files.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/doc/index.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/doc/installing.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/doc/introduction.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/doc/japanese.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/doc/messages.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/doc/overview.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/doc/plugins.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/doc/sending.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Attachment.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/ByteStream/AbstractFilterableInputStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/ByteStream/ArrayByteStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/ByteStream/FileByteStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/ByteStream/TemporaryFileByteStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReader/GenericFixedWidthReader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReader/UsAsciiReader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReader/Utf8Reader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReaderFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReaderFactory/SimpleCharacterReaderFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterStream/ArrayCharacterStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterStream/NgCharacterStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/ConfigurableSpool.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/DependencyContainer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/DependencyException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/EmbeddedFile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Encoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Encoder/Base64Encoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Encoder/QpEncoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Encoder/Rfc2231Encoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Encoding.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/CommandEvent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/CommandListener.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/Event.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/EventDispatcher.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/EventListener.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/EventObject.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/ResponseEvent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/ResponseListener.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/SendEvent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/SendListener.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/SimpleEventDispatcher.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/TransportChangeEvent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/TransportChangeListener.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/TransportExceptionEvent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/TransportExceptionListener.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/FailoverTransport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/FileSpool.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/FileStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Filterable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Image.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/InputByteStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/IoException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache/ArrayKeyCache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache/DiskKeyCache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache/KeyCacheInputStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache/NullKeyCache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache/SimpleKeyCacheInputStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/LoadBalancedTransport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/MailTransport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mailer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mailer/ArrayRecipientIterator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mailer/RecipientIterator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/MemorySpool.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Message.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Attachment.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/CharsetObserver.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/Base64ContentEncoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/NativeQpContentEncoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/PlainContentEncoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/QpContentEncoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/QpContentEncoderProxy.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/RawContentEncoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/EmbeddedFile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/EncodingObserver.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Grammar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Header.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/HeaderEncoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/HeaderEncoder/Base64HeaderEncoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/HeaderEncoder/QpHeaderEncoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/HeaderFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/HeaderSet.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/AbstractHeader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/DateHeader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/IdentificationHeader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/MailboxHeader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/OpenDKIMHeader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/ParameterizedHeader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/PathHeader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/UnstructuredHeader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Message.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/MimeEntity.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/MimePart.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ParameterizedHeader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/SimpleHeaderFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/SimpleHeaderSet.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/SimpleMessage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/SimpleMimeEntity.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/MimePart.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/NullTransport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/OutputByteStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/AntiFloodPlugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/BandwidthMonitorPlugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Decorator/Replacements.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/DecoratorPlugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/ImpersonatePlugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Logger.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/LoggerPlugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Loggers/ArrayLogger.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Loggers/EchoLogger.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/MessageLogger.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Pop/Pop3Connection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Pop/Pop3Exception.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/PopBeforeSmtpPlugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/RedirectingPlugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Reporter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/ReporterPlugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Reporters/HitReporter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Reporters/HtmlReporter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Sleeper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/ThrottlerPlugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Timer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Preferences.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/ReplacementFilterFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/RfcComplianceException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/SendmailTransport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/SignedMessage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Signer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/BodySigner.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/DKIMSigner.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/DomainKeySigner.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/HeaderSigner.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/OpenDKIMSigner.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/SMimeSigner.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/SmtpTransport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Spool.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/SpoolTransport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/StreamFilter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/StreamFilters/ByteArrayReplacementFilter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/StreamFilters/StringReplacementFilter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/StreamFilters/StringReplacementFilterFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/SwiftException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/AbstractSmtpTransport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Auth/CramMd5Authenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Auth/LoginAuthenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Auth/NTLMAuthenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Auth/PlainAuthenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Auth/XOAuth2Authenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/AuthHandler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Authenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/EsmtpHandler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/EsmtpTransport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/FailoverTransport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/IoBuffer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/LoadBalancedTransport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/MailInvoker.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/MailTransport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/NullTransport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/SendmailTransport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/SimpleMailInvoker.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/SmtpAgent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/SpoolTransport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/StreamBuffer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/TransportException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Validate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/dependency_maps/cache_deps.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/dependency_maps/message_deps.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/dependency_maps/mime_deps.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/dependency_maps/transport_deps.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/mime_types.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/preferences.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/swift_init.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/swift_required.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/swift_required_pear.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/lib/swiftmailer_generate_mimes_config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/phpunit.xml.dist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/IdenticalBinaryConstraint.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/StreamCollector.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/SwiftMailerSmokeTestCase.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/SwiftMailerTestCase.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/charsets/iso-2022-jp/one.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/charsets/iso-8859-1/one.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/charsets/utf-8/one.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/charsets/utf-8/three.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/charsets/utf-8/two.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/dkim/dkim.test.priv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/dkim/dkim.test.pub" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/files/data.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/CA.srl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/ca.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/ca.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/create-cert.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/encrypt.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/encrypt.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/encrypt2.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/encrypt2.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/intermediate.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/intermediate.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/sign.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/sign.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/sign2.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/sign2.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance.conf.php.default" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/AttachmentAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/ByteStream/FileByteStreamAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/CharacterReaderFactory/SimpleCharacterReaderFactoryAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/DependencyContainerAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/EmbeddedFileAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Encoder/Base64EncoderAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Encoder/QpEncoderAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Encoder/Rfc2231EncoderAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/EncodingAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/KeyCache/ArrayKeyCacheAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/KeyCache/DiskKeyCacheAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/MessageAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/AttachmentAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/ContentEncoder/Base64ContentEncoderAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/ContentEncoder/NativeQpContentEncoderAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/ContentEncoder/PlainContentEncoderAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/ContentEncoder/QpContentEncoderAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/EmbeddedFileAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/HeaderEncoder/Base64HeaderEncoderAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/MimePartAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/SimpleMessageAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/MimePartAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/AbstractStreamBufferAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/BasicSocketAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/ProcessAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/SocketTimeoutTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/SslSocketAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/TlsSocketAcceptanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/bootstrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug111Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug118Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug206Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug274Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug34Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug35Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug38Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug518Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug51Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug534Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug650Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug71Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug76Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/BugFileByteStreamConsecutiveReadCallsTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/fixtures/MimeEntityFixture.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/smoke.conf.php.default" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/smoke/Swift/Smoke/AttachmentSmokeTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/smoke/Swift/Smoke/BasicSmokeTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/smoke/Swift/Smoke/HtmlWithAttachmentSmokeTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/smoke/Swift/Smoke/InternationalSmokeTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/ByteStream/ArrayByteStreamTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/CharacterReader/GenericFixedWidthReaderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/CharacterReader/UsAsciiReaderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/CharacterReader/Utf8ReaderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/CharacterStream/ArrayCharacterStreamTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/DependencyContainerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Encoder/Base64EncoderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Encoder/QpEncoderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Encoder/Rfc2231EncoderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/CommandEventTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/EventObjectTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/ResponseEventTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/SendEventTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/SimpleEventDispatcherTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/TransportChangeEventTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/TransportExceptionEventTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/KeyCache/ArrayKeyCacheTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/KeyCache/SimpleKeyCacheInputStreamTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mailer/ArrayRecipientIteratorTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/MailerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/MessageTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/AbstractMimeEntityTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/AttachmentTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/ContentEncoder/Base64ContentEncoderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/ContentEncoder/PlainContentEncoderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/ContentEncoder/QpContentEncoderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/EmbeddedFileTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/HeaderEncoder/Base64HeaderEncoderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/HeaderEncoder/QpHeaderEncoderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/DateHeaderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/IdentificationHeaderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/MailboxHeaderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/ParameterizedHeaderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/PathHeaderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/UnstructuredHeaderTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/MimePartTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/SimpleHeaderFactoryTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/SimpleHeaderSetTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/SimpleMessageTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/SimpleMimeEntityTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/AntiFloodPluginTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/BandwidthMonitorPluginTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/DecoratorPluginTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/LoggerPluginTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/Loggers/ArrayLoggerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/Loggers/EchoLoggerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/PopBeforeSmtpPluginTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/RedirectingPluginTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/ReporterPluginTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/Reporters/HitReporterTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/Reporters/HtmlReporterTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/ThrottlerPluginTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Signers/DKIMSignerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Signers/OpenDKIMSignerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Signers/SMimeSignerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/StreamFilters/ByteArrayReplacementFilterTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/StreamFilters/StringReplacementFilterFactoryTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/StreamFilters/StringReplacementFilterTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/AbstractSmtpEventSupportTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/AbstractSmtpTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/Esmtp/Auth/CramMd5AuthenticatorTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/Esmtp/Auth/LoginAuthenticatorTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/Esmtp/Auth/NTLMAuthenticatorTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/Esmtp/Auth/PlainAuthenticatorTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/Esmtp/AuthHandlerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/EsmtpTransport/ExtensionSupportTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/EsmtpTransportTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/FailoverTransportTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/LoadBalancedTransportTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/MailTransportTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/SendmailTransportTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/StreamBufferTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/backup/20160719185815_tcexam_backup.sql.gz" afterPath="$PROJECT_DIR$/cache/backup/20160719185815_tcexam_backup.sql.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/backup/20160721115157_tcexam_backup.sql.gz" afterPath="$PROJECT_DIR$/cache/backup/20160721115157_tcexam_backup.sql.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/backup/20160721190904_tcexam_backup.sql.gz" afterPath="$PROJECT_DIR$/cache/backup/20160721190904_tcexam_backup.sql.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/backup/20160721190917_tcexam_backup.sql.gz" afterPath="$PROJECT_DIR$/cache/backup/20160721190917_tcexam_backup.sql.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/backup/empty" afterPath="$PROJECT_DIR$/cache/backup/empty" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/correct.png" afterPath="$PROJECT_DIR$/images/correct.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/wrong.png" afterPath="$PROJECT_DIR$/images/wrong.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/edits/users.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/doc/uml/Encoders.graffle" afterPath="$PROJECT_DIR$/swift/doc/uml/Encoders.graffle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/doc/uml/Mime.graffle" afterPath="$PROJECT_DIR$/swift/doc/uml/Mime.graffle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/doc/uml/Transports.graffle" afterPath="$PROJECT_DIR$/swift/doc/uml/Transports.graffle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/files/swiftmailer.png" afterPath="$PROJECT_DIR$/swift/tests/_samples/files/swiftmailer.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/files/textfile.zip" afterPath="$PROJECT_DIR$/swift/tests/_samples/files/textfile.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/code/tce_edit_user.php" afterPath="$PROJECT_DIR$/admin/code/tce_edit_user.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/OMR/README.TXT" afterPath="$PROJECT_DIR$/cache/OMR/README.TXT" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/date.txt" afterPath="$PROJECT_DIR$/cache/date.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/README.TXT" afterPath="$PROJECT_DIR$/cache/lang/README.TXT" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_ar.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_ar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_az.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_az.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_bg.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_bg.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_br.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_br.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_cn.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_cn.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_de.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_de.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_el.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_el.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_en.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_en.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_es.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_es.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_fa.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_fa.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_fr.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_fr.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_he.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_he.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_hi.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_hi.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_hu.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_hu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_id.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_id.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_it.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_it.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_jp.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_jp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_mr.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_mr.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_ms.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_ms.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_nl.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_nl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_pl.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_pl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_ro.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_ro.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_ru.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_ru.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_tr.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_tr.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/lang/language_tmx_vn.php" afterPath="$PROJECT_DIR$/cache/lang/language_tmx_vn.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edits/tce_bulk_registrations.php" afterPath="$PROJECT_DIR$/edits/tce_bulk_registrations.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install/install.log" afterPath="$PROJECT_DIR$/install/install.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install/install.php" afterPath="$PROJECT_DIR$/install/install.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/code/tce_page_instruction.php" afterPath="$PROJECT_DIR$/public/code/tce_page_instruction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/code/tce_show_result_user.php" afterPath="$PROJECT_DIR$/public/code/tce_show_result_user.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/code/tce_test_execute.php" afterPath="$PROJECT_DIR$/public/code/tce_test_execute.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/code/tce_user_registration.php" afterPath="$PROJECT_DIR$/public/code/tce_user_registration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shared/code/tce_functions_authorization.php" afterPath="$PROJECT_DIR$/shared/code/tce_functions_authorization.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shared/code/tce_functions_test.php" afterPath="$PROJECT_DIR$/shared/code/tce_functions_test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shared/config/tce_db_config.php" afterPath="$PROJECT_DIR$/shared/config/tce_db_config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/code/tce_view_comments.php" afterPath="$PROJECT_DIR$/public/code/tce_view_comments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shared/config/tce_email_config.php" afterPath="$PROJECT_DIR$/shared/config/tce_email_config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/.gitattributes" afterPath="$PROJECT_DIR$/swift/.gitattributes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/.gitignore" afterPath="$PROJECT_DIR$/swift/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/.travis.yml" afterPath="$PROJECT_DIR$/swift/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/CHANGES" afterPath="$PROJECT_DIR$/swift/CHANGES" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/LICENSE" afterPath="$PROJECT_DIR$/swift/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/README" afterPath="$PROJECT_DIR$/swift/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/VERSION" afterPath="$PROJECT_DIR$/swift/VERSION" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/composer.json" afterPath="$PROJECT_DIR$/swift/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/doc/headers.rst" afterPath="$PROJECT_DIR$/swift/doc/headers.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/doc/help-resources.rst" afterPath="$PROJECT_DIR$/swift/doc/help-resources.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/doc/including-the-files.rst" afterPath="$PROJECT_DIR$/swift/doc/including-the-files.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/doc/index.rst" afterPath="$PROJECT_DIR$/swift/doc/index.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/doc/installing.rst" afterPath="$PROJECT_DIR$/swift/doc/installing.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/doc/introduction.rst" afterPath="$PROJECT_DIR$/swift/doc/introduction.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/doc/japanese.rst" afterPath="$PROJECT_DIR$/swift/doc/japanese.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/doc/messages.rst" afterPath="$PROJECT_DIR$/swift/doc/messages.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/doc/overview.rst" afterPath="$PROJECT_DIR$/swift/doc/overview.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/doc/plugins.rst" afterPath="$PROJECT_DIR$/swift/doc/plugins.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/doc/sending.rst" afterPath="$PROJECT_DIR$/swift/doc/sending.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Attachment.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Attachment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/ByteStream/AbstractFilterableInputStream.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/ByteStream/AbstractFilterableInputStream.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/ByteStream/ArrayByteStream.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/ByteStream/ArrayByteStream.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/ByteStream/FileByteStream.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/ByteStream/FileByteStream.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/ByteStream/TemporaryFileByteStream.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/ByteStream/TemporaryFileByteStream.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReader.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReader/GenericFixedWidthReader.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReader/GenericFixedWidthReader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReader/UsAsciiReader.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReader/UsAsciiReader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReader/Utf8Reader.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReader/Utf8Reader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReaderFactory.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReaderFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReaderFactory/SimpleCharacterReaderFactory.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterReaderFactory/SimpleCharacterReaderFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterStream.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterStream.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterStream/ArrayCharacterStream.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterStream/ArrayCharacterStream.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterStream/NgCharacterStream.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/CharacterStream/NgCharacterStream.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/ConfigurableSpool.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/ConfigurableSpool.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/DependencyContainer.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/DependencyContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/DependencyException.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/DependencyException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/EmbeddedFile.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/EmbeddedFile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Encoder.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Encoder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Encoder/Base64Encoder.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Encoder/Base64Encoder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Encoder/QpEncoder.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Encoder/QpEncoder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Encoder/Rfc2231Encoder.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Encoder/Rfc2231Encoder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Encoding.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Encoding.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/CommandEvent.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/CommandEvent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/CommandListener.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/CommandListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/Event.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/Event.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/EventDispatcher.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/EventDispatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/EventListener.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/EventListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/EventObject.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/EventObject.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/ResponseEvent.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/ResponseEvent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/ResponseListener.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/ResponseListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/SendEvent.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/SendEvent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/SendListener.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/SendListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/SimpleEventDispatcher.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/SimpleEventDispatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/TransportChangeEvent.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/TransportChangeEvent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/TransportChangeListener.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/TransportChangeListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/TransportExceptionEvent.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/TransportExceptionEvent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/TransportExceptionListener.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Events/TransportExceptionListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/FailoverTransport.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/FailoverTransport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/FileSpool.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/FileSpool.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/FileStream.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/FileStream.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Filterable.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Filterable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Image.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Image.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/InputByteStream.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/InputByteStream.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/IoException.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/IoException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache/ArrayKeyCache.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache/ArrayKeyCache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache/DiskKeyCache.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache/DiskKeyCache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache/KeyCacheInputStream.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache/KeyCacheInputStream.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache/NullKeyCache.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache/NullKeyCache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache/SimpleKeyCacheInputStream.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/KeyCache/SimpleKeyCacheInputStream.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/LoadBalancedTransport.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/LoadBalancedTransport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/MailTransport.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/MailTransport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mailer.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mailer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mailer/ArrayRecipientIterator.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mailer/ArrayRecipientIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mailer/RecipientIterator.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mailer/RecipientIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/MemorySpool.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/MemorySpool.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Message.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Message.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Attachment.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Attachment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/CharsetObserver.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/CharsetObserver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/Base64ContentEncoder.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/Base64ContentEncoder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/NativeQpContentEncoder.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/NativeQpContentEncoder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/PlainContentEncoder.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/PlainContentEncoder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/QpContentEncoder.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/QpContentEncoder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/QpContentEncoderProxy.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/QpContentEncoderProxy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/RawContentEncoder.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ContentEncoder/RawContentEncoder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/EmbeddedFile.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/EmbeddedFile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/EncodingObserver.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/EncodingObserver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Grammar.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Grammar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Header.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/HeaderEncoder.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/HeaderEncoder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/HeaderEncoder/Base64HeaderEncoder.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/HeaderEncoder/Base64HeaderEncoder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/HeaderEncoder/QpHeaderEncoder.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/HeaderEncoder/QpHeaderEncoder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/HeaderFactory.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/HeaderFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/HeaderSet.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/HeaderSet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/AbstractHeader.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/AbstractHeader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/DateHeader.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/DateHeader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/IdentificationHeader.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/IdentificationHeader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/MailboxHeader.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/MailboxHeader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/OpenDKIMHeader.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/OpenDKIMHeader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/ParameterizedHeader.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/ParameterizedHeader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/PathHeader.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/PathHeader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/UnstructuredHeader.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Headers/UnstructuredHeader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Message.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/Message.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/MimeEntity.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/MimeEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/MimePart.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/MimePart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ParameterizedHeader.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/ParameterizedHeader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/SimpleHeaderFactory.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/SimpleHeaderFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/SimpleHeaderSet.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/SimpleHeaderSet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/SimpleMessage.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/SimpleMessage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/SimpleMimeEntity.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Mime/SimpleMimeEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/MimePart.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/MimePart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/NullTransport.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/NullTransport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/OutputByteStream.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/OutputByteStream.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/AntiFloodPlugin.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/AntiFloodPlugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/BandwidthMonitorPlugin.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/BandwidthMonitorPlugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Decorator/Replacements.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Decorator/Replacements.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/DecoratorPlugin.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/DecoratorPlugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/ImpersonatePlugin.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/ImpersonatePlugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Logger.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Logger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/LoggerPlugin.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/LoggerPlugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Loggers/ArrayLogger.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Loggers/ArrayLogger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Loggers/EchoLogger.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Loggers/EchoLogger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/MessageLogger.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/MessageLogger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Pop/Pop3Connection.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Pop/Pop3Connection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Pop/Pop3Exception.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Pop/Pop3Exception.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/PopBeforeSmtpPlugin.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/PopBeforeSmtpPlugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/RedirectingPlugin.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/RedirectingPlugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Reporter.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Reporter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/ReporterPlugin.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/ReporterPlugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Reporters/HitReporter.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Reporters/HitReporter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Reporters/HtmlReporter.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Reporters/HtmlReporter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Sleeper.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Sleeper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/ThrottlerPlugin.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/ThrottlerPlugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Timer.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Plugins/Timer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Preferences.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Preferences.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/ReplacementFilterFactory.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/ReplacementFilterFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/RfcComplianceException.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/RfcComplianceException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/SendmailTransport.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/SendmailTransport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/SignedMessage.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/SignedMessage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Signer.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Signer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/BodySigner.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/BodySigner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/DKIMSigner.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/DKIMSigner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/DomainKeySigner.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/DomainKeySigner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/HeaderSigner.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/HeaderSigner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/OpenDKIMSigner.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/OpenDKIMSigner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/SMimeSigner.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Signers/SMimeSigner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/SmtpTransport.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/SmtpTransport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Spool.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Spool.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/SpoolTransport.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/SpoolTransport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/StreamFilter.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/StreamFilter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/StreamFilters/ByteArrayReplacementFilter.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/StreamFilters/ByteArrayReplacementFilter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/StreamFilters/StringReplacementFilter.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/StreamFilters/StringReplacementFilter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/StreamFilters/StringReplacementFilterFactory.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/StreamFilters/StringReplacementFilterFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/SwiftException.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/SwiftException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/AbstractSmtpTransport.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/AbstractSmtpTransport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Auth/CramMd5Authenticator.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Auth/CramMd5Authenticator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Auth/LoginAuthenticator.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Auth/LoginAuthenticator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Auth/NTLMAuthenticator.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Auth/NTLMAuthenticator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Auth/PlainAuthenticator.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Auth/PlainAuthenticator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Auth/XOAuth2Authenticator.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Auth/XOAuth2Authenticator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/AuthHandler.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/AuthHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Authenticator.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/Esmtp/Authenticator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/EsmtpHandler.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/EsmtpHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/EsmtpTransport.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/EsmtpTransport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/FailoverTransport.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/FailoverTransport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/IoBuffer.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/IoBuffer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/LoadBalancedTransport.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/LoadBalancedTransport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/MailInvoker.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/MailInvoker.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/MailTransport.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/MailTransport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/NullTransport.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/NullTransport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/SendmailTransport.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/SendmailTransport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/SimpleMailInvoker.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/SimpleMailInvoker.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/SmtpAgent.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/SmtpAgent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/SpoolTransport.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/SpoolTransport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/StreamBuffer.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Transport/StreamBuffer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/TransportException.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/TransportException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/classes/Swift/Validate.php" afterPath="$PROJECT_DIR$/swift/lib/classes/Swift/Validate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/dependency_maps/cache_deps.php" afterPath="$PROJECT_DIR$/swift/lib/dependency_maps/cache_deps.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/dependency_maps/message_deps.php" afterPath="$PROJECT_DIR$/swift/lib/dependency_maps/message_deps.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/dependency_maps/mime_deps.php" afterPath="$PROJECT_DIR$/swift/lib/dependency_maps/mime_deps.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/dependency_maps/transport_deps.php" afterPath="$PROJECT_DIR$/swift/lib/dependency_maps/transport_deps.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/mime_types.php" afterPath="$PROJECT_DIR$/swift/lib/mime_types.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/preferences.php" afterPath="$PROJECT_DIR$/swift/lib/preferences.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/swift_init.php" afterPath="$PROJECT_DIR$/swift/lib/swift_init.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/swift_required.php" afterPath="$PROJECT_DIR$/swift/lib/swift_required.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/lib/swift_required_pear.php" afterPath="$PROJECT_DIR$/swift/lib/swift_required_pear.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/phpunit.xml.dist" afterPath="$PROJECT_DIR$/swift/phpunit.xml.dist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/IdenticalBinaryConstraint.php" afterPath="$PROJECT_DIR$/swift/tests/IdenticalBinaryConstraint.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/StreamCollector.php" afterPath="$PROJECT_DIR$/swift/tests/StreamCollector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/SwiftMailerSmokeTestCase.php" afterPath="$PROJECT_DIR$/swift/tests/SwiftMailerSmokeTestCase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/SwiftMailerTestCase.php" afterPath="$PROJECT_DIR$/swift/tests/SwiftMailerTestCase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/charsets/iso-2022-jp/one.txt" afterPath="$PROJECT_DIR$/swift/tests/_samples/charsets/iso-2022-jp/one.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/charsets/iso-8859-1/one.txt" afterPath="$PROJECT_DIR$/swift/tests/_samples/charsets/iso-8859-1/one.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/charsets/utf-8/one.txt" afterPath="$PROJECT_DIR$/swift/tests/_samples/charsets/utf-8/one.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/charsets/utf-8/three.txt" afterPath="$PROJECT_DIR$/swift/tests/_samples/charsets/utf-8/three.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/charsets/utf-8/two.txt" afterPath="$PROJECT_DIR$/swift/tests/_samples/charsets/utf-8/two.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/dkim/dkim.test.priv" afterPath="$PROJECT_DIR$/swift/tests/_samples/dkim/dkim.test.priv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/dkim/dkim.test.pub" afterPath="$PROJECT_DIR$/swift/tests/_samples/dkim/dkim.test.pub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/files/data.txt" afterPath="$PROJECT_DIR$/swift/tests/_samples/files/data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/smime/CA.srl" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/CA.srl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/smime/ca.crt" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/smime/ca.key" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/ca.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/smime/create-cert.sh" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/create-cert.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/smime/encrypt.crt" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/encrypt.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/smime/encrypt.key" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/encrypt.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/smime/encrypt2.crt" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/encrypt2.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/smime/encrypt2.key" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/encrypt2.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/smime/intermediate.crt" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/intermediate.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/smime/intermediate.key" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/intermediate.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/smime/sign.crt" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/sign.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/smime/sign.key" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/sign.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/smime/sign2.crt" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/sign2.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/_samples/smime/sign2.key" afterPath="$PROJECT_DIR$/swift/tests/_samples/smime/sign2.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance.conf.php.default" afterPath="$PROJECT_DIR$/swift/tests/acceptance.conf.php.default" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/AttachmentAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/AttachmentAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/ByteStream/FileByteStreamAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/ByteStream/FileByteStreamAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/CharacterReaderFactory/SimpleCharacterReaderFactoryAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/CharacterReaderFactory/SimpleCharacterReaderFactoryAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/DependencyContainerAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/DependencyContainerAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/EmbeddedFileAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/EmbeddedFileAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Encoder/Base64EncoderAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Encoder/Base64EncoderAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Encoder/QpEncoderAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Encoder/QpEncoderAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Encoder/Rfc2231EncoderAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Encoder/Rfc2231EncoderAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/EncodingAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/EncodingAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/KeyCache/ArrayKeyCacheAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/KeyCache/ArrayKeyCacheAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/KeyCache/DiskKeyCacheAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/KeyCache/DiskKeyCacheAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/MessageAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/MessageAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/AttachmentAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/AttachmentAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/ContentEncoder/Base64ContentEncoderAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/ContentEncoder/Base64ContentEncoderAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/ContentEncoder/NativeQpContentEncoderAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/ContentEncoder/NativeQpContentEncoderAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/ContentEncoder/PlainContentEncoderAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/ContentEncoder/PlainContentEncoderAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/ContentEncoder/QpContentEncoderAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/ContentEncoder/QpContentEncoderAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/EmbeddedFileAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/EmbeddedFileAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/HeaderEncoder/Base64HeaderEncoderAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/HeaderEncoder/Base64HeaderEncoderAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/MimePartAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/MimePartAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/SimpleMessageAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Mime/SimpleMessageAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/MimePartAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/MimePartAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/AbstractStreamBufferAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/AbstractStreamBufferAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/BasicSocketAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/BasicSocketAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/ProcessAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/ProcessAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/SocketTimeoutTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/SocketTimeoutTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/SslSocketAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/SslSocketAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/TlsSocketAcceptanceTest.php" afterPath="$PROJECT_DIR$/swift/tests/acceptance/Swift/Transport/StreamBuffer/TlsSocketAcceptanceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/bootstrap.php" afterPath="$PROJECT_DIR$/swift/tests/bootstrap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug111Test.php" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug111Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug118Test.php" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug118Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug206Test.php" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug206Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug274Test.php" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug274Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug34Test.php" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug34Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug35Test.php" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug35Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug38Test.php" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug38Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug518Test.php" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug518Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug51Test.php" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug51Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug534Test.php" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug534Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug650Test.php" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug650Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug71Test.php" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug71Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug76Test.php" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/Bug76Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/bug/Swift/BugFileByteStreamConsecutiveReadCallsTest.php" afterPath="$PROJECT_DIR$/swift/tests/bug/Swift/BugFileByteStreamConsecutiveReadCallsTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/fixtures/MimeEntityFixture.php" afterPath="$PROJECT_DIR$/swift/tests/fixtures/MimeEntityFixture.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/smoke.conf.php.default" afterPath="$PROJECT_DIR$/swift/tests/smoke.conf.php.default" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/smoke/Swift/Smoke/AttachmentSmokeTest.php" afterPath="$PROJECT_DIR$/swift/tests/smoke/Swift/Smoke/AttachmentSmokeTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/smoke/Swift/Smoke/BasicSmokeTest.php" afterPath="$PROJECT_DIR$/swift/tests/smoke/Swift/Smoke/BasicSmokeTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/smoke/Swift/Smoke/HtmlWithAttachmentSmokeTest.php" afterPath="$PROJECT_DIR$/swift/tests/smoke/Swift/Smoke/HtmlWithAttachmentSmokeTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/smoke/Swift/Smoke/InternationalSmokeTest.php" afterPath="$PROJECT_DIR$/swift/tests/smoke/Swift/Smoke/InternationalSmokeTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/ByteStream/ArrayByteStreamTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/ByteStream/ArrayByteStreamTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/CharacterReader/GenericFixedWidthReaderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/CharacterReader/GenericFixedWidthReaderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/CharacterReader/UsAsciiReaderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/CharacterReader/UsAsciiReaderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/CharacterReader/Utf8ReaderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/CharacterReader/Utf8ReaderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/CharacterStream/ArrayCharacterStreamTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/CharacterStream/ArrayCharacterStreamTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/DependencyContainerTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/DependencyContainerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Encoder/Base64EncoderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Encoder/Base64EncoderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Encoder/QpEncoderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Encoder/QpEncoderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Encoder/Rfc2231EncoderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Encoder/Rfc2231EncoderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/CommandEventTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/CommandEventTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/EventObjectTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/EventObjectTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/ResponseEventTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/ResponseEventTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/SendEventTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/SendEventTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/SimpleEventDispatcherTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/SimpleEventDispatcherTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/TransportChangeEventTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/TransportChangeEventTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/TransportExceptionEventTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Events/TransportExceptionEventTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/KeyCache/ArrayKeyCacheTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/KeyCache/ArrayKeyCacheTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/KeyCache/SimpleKeyCacheInputStreamTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/KeyCache/SimpleKeyCacheInputStreamTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mailer/ArrayRecipientIteratorTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mailer/ArrayRecipientIteratorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/MailerTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/MailerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/MessageTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/MessageTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/AbstractMimeEntityTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/AbstractMimeEntityTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/AttachmentTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/AttachmentTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/ContentEncoder/Base64ContentEncoderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/ContentEncoder/Base64ContentEncoderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/ContentEncoder/PlainContentEncoderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/ContentEncoder/PlainContentEncoderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/ContentEncoder/QpContentEncoderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/ContentEncoder/QpContentEncoderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/EmbeddedFileTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/EmbeddedFileTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/HeaderEncoder/Base64HeaderEncoderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/HeaderEncoder/Base64HeaderEncoderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/HeaderEncoder/QpHeaderEncoderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/HeaderEncoder/QpHeaderEncoderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/DateHeaderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/DateHeaderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/IdentificationHeaderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/IdentificationHeaderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/MailboxHeaderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/MailboxHeaderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/ParameterizedHeaderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/ParameterizedHeaderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/PathHeaderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/PathHeaderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/UnstructuredHeaderTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/Headers/UnstructuredHeaderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/MimePartTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/MimePartTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/SimpleHeaderFactoryTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/SimpleHeaderFactoryTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/SimpleHeaderSetTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/SimpleHeaderSetTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/SimpleMessageTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/SimpleMessageTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/SimpleMimeEntityTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Mime/SimpleMimeEntityTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/AntiFloodPluginTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/AntiFloodPluginTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/BandwidthMonitorPluginTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/BandwidthMonitorPluginTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/DecoratorPluginTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/DecoratorPluginTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/LoggerPluginTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/LoggerPluginTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/Loggers/ArrayLoggerTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/Loggers/ArrayLoggerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/Loggers/EchoLoggerTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/Loggers/EchoLoggerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/PopBeforeSmtpPluginTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/PopBeforeSmtpPluginTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/RedirectingPluginTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/RedirectingPluginTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/ReporterPluginTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/ReporterPluginTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/Reporters/HitReporterTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/Reporters/HitReporterTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/Reporters/HtmlReporterTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/Reporters/HtmlReporterTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/ThrottlerPluginTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Plugins/ThrottlerPluginTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Signers/DKIMSignerTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Signers/DKIMSignerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Signers/OpenDKIMSignerTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Signers/OpenDKIMSignerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Signers/SMimeSignerTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Signers/SMimeSignerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/StreamFilters/ByteArrayReplacementFilterTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/StreamFilters/ByteArrayReplacementFilterTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/StreamFilters/StringReplacementFilterFactoryTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/StreamFilters/StringReplacementFilterFactoryTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/StreamFilters/StringReplacementFilterTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/StreamFilters/StringReplacementFilterTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/AbstractSmtpEventSupportTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/AbstractSmtpEventSupportTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/AbstractSmtpTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/AbstractSmtpTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/Esmtp/Auth/CramMd5AuthenticatorTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/Esmtp/Auth/CramMd5AuthenticatorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/Esmtp/Auth/LoginAuthenticatorTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/Esmtp/Auth/LoginAuthenticatorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/Esmtp/Auth/NTLMAuthenticatorTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/Esmtp/Auth/NTLMAuthenticatorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/Esmtp/Auth/PlainAuthenticatorTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/Esmtp/Auth/PlainAuthenticatorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/Esmtp/AuthHandlerTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/Esmtp/AuthHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/EsmtpTransport/ExtensionSupportTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/EsmtpTransport/ExtensionSupportTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/EsmtpTransportTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/EsmtpTransportTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/FailoverTransportTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/FailoverTransportTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/LoadBalancedTransportTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/LoadBalancedTransportTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/MailTransportTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/MailTransportTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/SendmailTransportTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/SendmailTransportTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/StreamBufferTest.php" afterPath="$PROJECT_DIR$/swift/tests/unit/Swift/Transport/StreamBufferTest.php" />
     </list>
     <ignored path="raudra.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -415,111 +373,136 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tce_user_registration.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tce_user_registration.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/code/tce_user_registration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2136">
+            <state relative-caret-position="585">
               <caret line="162" column="20" selection-start-line="162" selection-start-column="16" selection-end-line="162" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="tce_email_config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shared/config/tce_email_config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+            <state relative-caret-position="107">
+              <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tce_test_execute.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/code/tce_test_execute.php">
+      <file leaf-file-name="tce_bulk_registrations.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/edits/tce_bulk_registrations.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="172" column="62" selection-start-line="172" selection-start-column="62" selection-end-line="172" selection-end-column="62" />
+            <state relative-caret-position="266">
+              <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
               <folding>
-                <marker date="1471256914862" expanded="true" signature="5645:5674" ph="..." />
+                <element signature="n#F_db_connect#0;n#!!top" expanded="false" />
+                <marker date="1471757549169" expanded="true" signature="4435:4554" ph="..." />
+                <marker date="1471757549169" expanded="true" signature="5394:5407" ph="..." />
+                <marker date="1471757549169" expanded="true" signature="5667:5741" ph="SELECT user_... tce_users" />
+                <marker date="1471757549169" expanded="true" signature="6312:7201" ph="INSERT INTO ${K_TABLE_USERS}... " />
+                <marker date="1471757549169" expanded="true" signature="7351:7442" ph="SELECT user_... ${K_TABLE_USERS}" />
+                <marker date="1471757549169" expanded="true" signature="7718:7793" ph="SELECT group... ${K_TABLE_USER_GROUP}" />
+                <marker date="1471757549169" expanded="true" signature="7931:8077" ph="INSERT INTO ${K_TABLE_USERGROUP}... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="install.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/install/install.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="27" column="35" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="35" />
+              <folding>
+                <marker date="1471753096117" expanded="true" signature="6480:6493" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tce_functions_install.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/install/tce_functions_install.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1094">
+              <caret line="253" column="52" selection-start-line="253" selection-start-column="52" selection-end-line="253" selection-end-column="52" />
+              <folding>
+                <marker date="1471753019824" expanded="true" signature="2339:2352" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="2685:2698" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="3089:3102" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="3251:3264" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="3478:3491" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="3693:3706" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="7533:7647" ph="select \'DRO... user_sequences" />
+                <marker date="1471753019824" expanded="true" signature="7813:7923" ph="select \'DRO... user_triggers" />
+                <marker date="1471753019824" expanded="true" signature="8087:8209" ph="select \'DRO... user_tables" />
+                <marker date="1471753019824" expanded="true" signature="8377:8390" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="8736:8749" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="9150:9163" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="9284:9297" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="12780:12793" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="12938:12951" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="13250:13263" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="13383:13396" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="13842:13855" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="14151:14164" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="14284:14297" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="14650:14663" ph="..." />
+                <marker date="1471753019824" expanded="true" signature="14777:14790" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="install.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/install/install.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="37" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tce_db_config.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shared/config/tce_db_config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2054">
+              <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="tce_config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shared/config/tce_config.php">
+        <entry file="file://$PROJECT_DIR$/admin/config/tce_config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="343" column="0" selection-start-line="343" selection-start-column="0" selection-end-line="343" selection-end-column="0" />
+            <state relative-caret-position="576">
+              <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="language_tmx.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shared/config/lang/language_tmx.xml">
+      <file leaf-file-name="tce_config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/config/tce_config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="30734" column="23" selection-start-line="30734" selection-start-column="12" selection-end-line="30734" selection-end-column="23" />
+            <state relative-caret-position="315">
+              <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tmx.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shared/config/lang/tmx.ini">
+      <file leaf-file-name="tce_class_mailer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shared/code/tce_class_mailer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+            <state relative-caret-position="111">
+              <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tmx14.dtd" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shared/config/lang/tmx14.dtd">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4563">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tce_paths.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shared/config/tce_paths.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="117" column="9" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tce_tmx.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shared/code/tce_tmx.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="182" column="17" selection-start-line="182" selection-start-column="17" selection-end-line="182" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tce_functions_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shared/code/tce_functions_form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="196" column="9" selection-start-line="196" selection-start-column="9" selection-end-line="196" selection-end-column="9" />
-              <folding>
-                <marker date="1471172177036" expanded="true" signature="16369:16375" ph=" " />
-                <marker date="1471172177036" expanded="true" signature="16517:16553" ph="..." />
-                <marker date="1471172177036" expanded="true" signature="16555:16561" ph=" " />
-                <marker date="1471172177036" expanded="true" signature="16714:16732" ph="..." />
-                <marker date="1471172177036" expanded="true" signature="17014:17046" ph="..." />
-                <marker date="1471172177036" expanded="true" signature="17474:17480" ph=" " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -556,6 +539,11 @@
         <option value="$PROJECT_DIR$/shared/code/tce_functions_test.php" />
         <option value="$PROJECT_DIR$/public/code/tce_test_execute.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/shared/code/tce_class_mailer.php" />
+        <option value="$PROJECT_DIR$/public/config/tce_config.php" />
+        <option value="$PROJECT_DIR$/shared/config/tce_email_config.php" />
+        <option value="$PROJECT_DIR$/edits/tce_bulk_registrations.php" />
+        <option value="$PROJECT_DIR$/shared/config/tce_db_config.php" />
       </list>
     </option>
   </component>
@@ -570,10 +558,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="57" />
-    <option name="y" value="21" />
-    <option name="width" value="1309" />
-    <option name="height" value="747" />
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1301" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -628,7 +616,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
+              <option name="myItemId" value="fonts" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -642,79 +630,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raudra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raudra" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raudra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raudra" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raudra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raudra" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raudra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raudra" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="edits" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -729,56 +645,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cache" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raudra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raudra" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cache" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raudra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raudra" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raudra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raudra" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -791,7 +657,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="tce_&#9;FILE&#9;file:///var/www/html/raudra/public/code/tce_user_registration.php&#10;tce_tes&#9;FILE&#9;file:///var/www/html/raudra/public/code/tce_test_execute.php&#10;tce_test&#9;FILE&#9;file:///var/www/html/raudra/public/code/tce_test_start.php&#10;in&#9;FILE&#9;file:///var/www/html/raudra/public/code/index.php&#10;tce&#9;FILE&#9;file:///var/www/html/raudra/shared/code/tce_functions_test_stats.php&#10;lan&#9;FILE&#9;file:///var/www/html/raudra/cache/lang/language_tmx_en.php&#10;tce_show_result_user&#9;FILE&#9;file:///var/www/html/raudra/public/code/tce_show_result_user.php&#10;defa&#9;FILE&#9;file:///var/www/html/raudra/public/styles/default.css&#10;defau&#9;FILE&#9;file:///var/www/html/raudra/public/styles/default.css&#10;tce_authorization&#9;FILE&#9;file:///var/www/html/raudra/shared/code/tce_authorization.php&#10;index&#9;FILE&#9;file:///var/www/html/raudra/public/code/index.php&#10;tce_lo&#9;FILE&#9;file:///var/www/html/raudra/public/code/tce_login.php&#10;tce_user&#9;FILE&#9;file:///var/www/html/raudra/public/code/tce_user_registration.php&#10;tce_edi&#9;FILE&#9;file:///var/www/html/raudra/admin/code/tce_edit_answer.php&#10;tc_edi&#9;FILE&#9;file:///var/www/html/raudra/admin/code/tce_edit_question.php&#10;index.p&#9;FILE&#9;file:///var/www/html/raudra/public/index.php&#10;tce_test_execute.php&#9;FILE&#9;file:///var/www/html/raudra/public/code/tce_test_execute.php&#10;tce_show_result_user.php&#9;FILE&#9;file:///var/www/html/raudra/admin/code/tce_show_result_user.php&#10;tce_test_execute&#9;FILE&#9;file:///var/www/html/raudra/public/code/tce_test_execute.php&#10;language_tmx_en&#9;FILE&#9;file:///var/www/html/raudra/cache/lang/language_tmx_en.php&#10;tce_tm&#9;FILE&#9;file:///var/www/html/raudra/shared/code/tce_tmx.php" />
+    <property name="SearchEverywhereHistoryKey" value="tce_db&#9;FILE&#9;file:///var/www/html/raudra/shared/config/tce_db_config.php&#10;tce_functions_install&#9;FILE&#9;file:///var/www/html/raudra/install/tce_functions_install.php&#10;tce_class&#9;FILE&#9;file:///var/www/html/raudra/shared/code/tce_class_mailer.php&#10;tce_email&#9;FILE&#9;file:///var/www/html/raudra/shared/config/tce_email_config.php&#10;tce_&#9;FILE&#9;file:///var/www/html/raudra/public/code/tce_user_registration.php&#10;tce_tes&#9;FILE&#9;file:///var/www/html/raudra/public/code/tce_test_execute.php&#10;tce_test&#9;FILE&#9;file:///var/www/html/raudra/public/code/tce_test_start.php&#10;in&#9;FILE&#9;file:///var/www/html/raudra/public/code/index.php&#10;tce&#9;FILE&#9;file:///var/www/html/raudra/shared/code/tce_functions_test_stats.php&#10;lan&#9;FILE&#9;file:///var/www/html/raudra/cache/lang/language_tmx_en.php&#10;tce_show_result_user&#9;FILE&#9;file:///var/www/html/raudra/public/code/tce_show_result_user.php&#10;defa&#9;FILE&#9;file:///var/www/html/raudra/public/styles/default.css&#10;defau&#9;FILE&#9;file:///var/www/html/raudra/public/styles/default.css&#10;tce_authorization&#9;FILE&#9;file:///var/www/html/raudra/shared/code/tce_authorization.php&#10;index&#9;FILE&#9;file:///var/www/html/raudra/public/code/index.php&#10;tce_lo&#9;FILE&#9;file:///var/www/html/raudra/public/code/tce_login.php&#10;tce_user&#9;FILE&#9;file:///var/www/html/raudra/public/code/tce_user_registration.php&#10;tce_edi&#9;FILE&#9;file:///var/www/html/raudra/admin/code/tce_edit_answer.php&#10;tc_edi&#9;FILE&#9;file:///var/www/html/raudra/admin/code/tce_edit_question.php&#10;index.p&#9;FILE&#9;file:///var/www/html/raudra/public/index.php&#10;tce_test_execute.php&#9;FILE&#9;file:///var/www/html/raudra/public/code/tce_test_execute.php&#10;tce_show_result_user.php&#9;FILE&#9;file:///var/www/html/raudra/admin/code/tce_show_result_user.php&#10;tce_test_execute&#9;FILE&#9;file:///var/www/html/raudra/public/code/tce_test_execute.php&#10;language_tmx_en&#9;FILE&#9;file:///var/www/html/raudra/cache/lang/language_tmx_en.php&#10;tce_tm&#9;FILE&#9;file:///var/www/html/raudra/shared/code/tce_tmx.php" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -870,6 +736,7 @@
       <workItem from="1471164350749" duration="9893000" />
       <workItem from="1471243606211" duration="2649000" />
       <workItem from="1471254311199" duration="3433000" />
+      <workItem from="1471753103063" duration="4630000" />
     </task>
     <task id="LOCAL-00001" summary="New fileds added in to the add question form i.e. Marks for Negative Answer and  Marks for correct answer">
       <created>1471106467777</created>
@@ -952,13 +819,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62331000" />
+    <option name="totallyTimeSpent" value="66961000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="21" width="1309" height="747" extended-state="6" />
-    <editor active="true" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23987778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14296696" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1037,56 +904,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/config/tce_auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/config/tce_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="35" column="36" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/code/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cache/README.TXT">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/config/tce_auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cache/lang/language_tmx_ar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cache/lang/language_tmx_az.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1112,13 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/config/tce_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="156" column="3" selection-start-line="156" selection-start-column="3" selection-end-line="156" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1182,13 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4665">
           <caret line="329" column="0" selection-start-line="329" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shared/config/tce_db_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1695">
-          <caret line="131" column="27" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1278,7 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="1567" column="10" selection-start-line="1567" selection-start-column="10" selection-end-line="1567" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1286,9 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
           <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-          <folding>
-            <element signature="e#6#69#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1296,7 +1095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1304,37 +1102,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="277" column="0" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
-          <folding>
-            <marker date="1471172176772" expanded="true" signature="8460:8530" ph="DELETE FROM " />
-            <marker date="1471172176772" expanded="true" signature="10597:10656" ph="SELECT COUNT... ${K_TABLE_QUESTIONS}" />
-            <marker date="1471172176772" expanded="true" signature="12603:12667" ph="SELECT * FRO... ${$sqlq}" />
-            <marker date="1471172176772" expanded="true" signature="13120:13443" ph="INSERT INTO ${K_TABLE_TEST_SUBJSET}... " />
-            <marker date="1471172176772" expanded="true" signature="13698:13871" ph="INSERT INTO ${K_TABLE_SUBJECT_SET}... " />
-            <marker date="1471172176772" expanded="true" signature="14845:14902" ph="DELETE FROM " />
-            <marker date="1471172176772" expanded="true" signature="18130:18204" ph="DELETE FROM " />
-            <marker date="1471172176772" expanded="true" signature="18397:18559" ph="INSERT INTO ${K_TABLE_TEST_GROUPS}... " />
-            <marker date="1471172176772" expanded="true" signature="18704:18780" ph="DELETE FROM " />
-            <marker date="1471172176772" expanded="true" signature="18975:19135" ph="INSERT INTO ${K_TABLE_TEST_SSLCERTS}... " />
-            <marker date="1471172176772" expanded="true" signature="19783:21691" ph="INSERT INTO ${K_TABLE_TESTS}... " />
-            <marker date="1471172176772" expanded="true" signature="21963:22125" ph="INSERT INTO ${K_TABLE_TEST_GROUPS}... " />
-            <marker date="1471172176772" expanded="true" signature="22339:22499" ph="INSERT INTO ${K_TABLE_TEST_SSLCERTS}... " />
-            <marker date="1471172176772" expanded="true" signature="22721:22812" ph="SELECT * FRO... ${K_TABLE_TEST_SUBJSET}" />
-            <marker date="1471172176772" expanded="true" signature="22937:23299" ph="INSERT INTO ${K_TABLE_TEST_SUBJSET}... " />
-            <marker date="1471172176772" expanded="true" signature="23483:23586" ph="SELECT * FRO... ${K_TABLE_SUBJECT_SET}" />
-            <marker date="1471172176772" expanded="true" signature="23696:23900" ph="INSERT INTO ${K_TABLE_SUBJECT_SET}... " />
-            <marker date="1471172176772" expanded="true" signature="26299:26365" ph="SELECT * FRO... ${K_TABLE_TESTS}" />
-            <marker date="1471172176772" expanded="true" signature="32582:32634" ph="SELECT * FRO... ${K_TABLE_GROUPS}" />
-            <marker date="1471172176772" expanded="true" signature="33450:33502" ph="SELECT * FRO... ${K_TABLE_SSLCERTS}" />
-            <marker date="1471172176772" expanded="true" signature="35761:35780" ph="..." />
-            <marker date="1471172176772" expanded="true" signature="37340:37359" ph="..." />
-            <marker date="1471172176772" expanded="true" signature="40836:40842" ph=" " />
-            <marker date="1471172176772" expanded="true" signature="42108:42337" ph="SELECT quest... ${K_TABLE_QUESTIONS}" />
-            <marker date="1471172176772" expanded="true" signature="42618:43013" ph="SELECT quest... ${K_TABLE_QUESTIONS}" />
-            <marker date="1471172176772" expanded="true" signature="45904:45910" ph=" " />
-            <marker date="1471172176772" expanded="true" signature="46263:46364" ph="SELECT * FRO... ${K_TABLE_TEST_SUBJSET}" />
-            <marker date="1471172176772" expanded="true" signature="46500:46704" ph="SELECT subje... ${K_TABLE_SUBJECTS}" />
-            <marker date="1471172176772" expanded="true" signature="49866:49872" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1342,9 +1109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
-          <folding>
-            <marker date="1471190467621" expanded="true" signature="1724:1844" ph="SELECT testu... ${K_TABLE_TEST_USER}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1352,79 +1116,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="325" column="9" selection-start-line="325" selection-start-column="9" selection-end-line="325" selection-end-column="9" />
-          <folding>
-            <element signature="e#72705#73654#0#PHP" expanded="false" />
-            <marker date="1471254680822" expanded="true" signature="1353:1515" ph="SELECT * FRO... ${K_TABLE_TESTS}" />
-            <marker date="1471254680822" expanded="true" signature="1408:1436" ph="SELECT tsubs... ${K_TABLE_TEST_SUBJSET}" />
-            <marker date="1471254680822" expanded="true" signature="2577:2602" ph="..." />
-            <marker date="1471254680822" expanded="true" signature="5052:5070" ph="..." />
-            <marker date="1471254680822" expanded="true" signature="9423:9529" ph="SELECT test_... ${K_TABLE_TESTS}" />
-            <marker date="1471254680822" expanded="true" signature="9632:9811" ph="SELECT testu... ${K_TABLE_TEST_USER}" />
-            <marker date="1471254680822" expanded="true" signature="16164:16376" ph="SELECT testu... ${K_TABLE_TEST_USER}" />
-            <marker date="1471254680822" expanded="true" signature="17493:17577" ph="DELETE FROM " />
-            <marker date="1471254680822" expanded="true" signature="21301:21368" ph="SELECT * FRO... ${K_TABLE_TESTS}" />
-            <marker date="1471254680822" expanded="true" signature="26332:26412" ph="SELECT * FRO... ${K_TABLE_TESTS}" />
-            <marker date="1471254680822" expanded="true" signature="26825:26905" ph="SELECT * FRO... ${K_TABLE_USERS}" />
-            <marker date="1471254680822" expanded="true" signature="28347:28451" ph="SELECT testu... ${K_TABLE_TEST_USER}" />
-            <marker date="1471254680822" expanded="true" signature="30047:30275" ph="SELECT test_... ${K_TABLE_TESTS}" />
-            <marker date="1471254680822" expanded="true" signature="32435:32616" ph="SELECT testu... ${K_TABLE_TEST_USER}" />
-            <marker date="1471254680822" expanded="true" signature="34435:34574" ph="SELECT answe... ${K_TABLE_ANSWERS}" />
-            <marker date="1471254680822" expanded="true" signature="34953:35013" ph="SELECT * FRO... ${$sql}" />
-            <marker date="1471254680822" expanded="true" signature="36206:36413" ph="INSERT INTO ${K_TABLE_LOG_ANSWER}... " />
-            <marker date="1471254680822" expanded="true" signature="36947:37075" ph="SELECT testu... ${K_TABLE_TEST_USER}" />
-            <marker date="1471254680822" expanded="true" signature="37923:38284" ph="INSERT INTO ${K_TABLE_TESTS_LOGS}... " />
-            <marker date="1471254680822" expanded="true" signature="41087:41166" ph="INSERT INTO ${K_TABLE_TESTUSER_STAT}... " />
-            <marker date="1471254680822" expanded="true" signature="43969:44174" ph="INSERT INTO ${K_TABLE_TEST_USER}... " />
-            <marker date="1471254680822" expanded="true" signature="44780:44934" ph="SELECT * FRO... ${K_TABLE_TEST_SUBJSET}" />
-            <marker date="1471254680822" expanded="true" signature="45179:45263" ph="SELECT subjs... ${K_TABLE_SUBJECT_SET}" />
-            <marker date="1471254680822" expanded="true" signature="45628:45777" ph="SELECT quest... ${K_TABLE_QUESTIONS}" />
-            <marker date="1471254680822" expanded="true" signature="46511:46655" ph="SELECT DISTI... ${K_TABLE_ANSWERS}" />
-            <marker date="1471254680822" expanded="true" signature="47365:47590" ph="SELECT answe... ${K_TABLE_ANSWERS}" />
-            <marker date="1471254680822" expanded="true" signature="48620:48814" ph="SELECT answe... ${K_TABLE_ANSWERS}" />
-            <marker date="1471254680822" expanded="true" signature="49613:49772" ph="SELECT answe... ${K_TABLE_ANSWERS}" />
-            <marker date="1471254680822" expanded="true" signature="50452:50529" ph="SELECT * FRO... ${$sqlq}" />
-            <marker date="1471254680822" expanded="true" signature="52982:53141" ph="SELECT * FRO... ${K_TABLE_TESTS_LOGS}" />
-            <marker date="1471254680822" expanded="true" signature="56127:56256" ph="SELECT answe... ${K_TABLE_ANSWERS}" />
-            <marker date="1471254680822" expanded="true" signature="57609:57832" ph="SELECT logan... ${K_TABLE_LOG_ANSWER}" />
-            <marker date="1471254680822" expanded="true" signature="59492:59649" ph="SELECT * FRO... ${K_TABLE_TESTS_LOGS}" />
-            <marker date="1471254680822" expanded="true" signature="60395:60573" ph="SELECT * FRO... ${K_TABLE_LOG_ANSWER}" />
-            <marker date="1471254680822" expanded="true" signature="68140:68291" ph="SELECT * FRO... ${K_TABLE_ANSWERS}" />
-            <marker date="1471254680822" expanded="true" signature="71857:72121" ph="SELECT testl... ${K_TABLE_TEST_USER}" />
-            <marker date="1471254680822" expanded="true" signature="72450:72611" ph="SELECT * FRO... ${K_TABLE_QUESTIONS}" />
-            <marker date="1471254680822" expanded="true" signature="74661:74677" ph="..." />
-            <marker date="1471254680822" expanded="true" signature="77605:77791" ph="SELECT * FRO... ${K_TABLE_ANSWERS}" />
-            <marker date="1471254680822" expanded="true" signature="83915:83921" ph=" " />
-            <marker date="1471254680822" expanded="true" signature="89424:89735" ph="SELECT quest... ${K_TABLE_QUESTIONS}" />
-            <marker date="1471254680822" expanded="true" signature="96619:97035" ph="..." />
-            <marker date="1471254680822" expanded="true" signature="96641:97026" ph="{...}" />
-            <marker date="1471254680822" expanded="true" signature="96746:97024" ph="{...}" />
-            <marker date="1471254680822" expanded="true" signature="96884:97014" ph="{...}" />
-            <marker date="1471254680822" expanded="true" signature="96938:97000" ph="{...}" />
-            <marker date="1471254680822" expanded="true" signature="98290:98464" ph="SELECT testu... ${K_TABLE_TEST_USER}" />
-            <marker date="1471254680822" expanded="true" signature="102107:102225" ph="SELECT tstgr... ${K_TABLE_TEST_GROUPS}" />
-            <marker date="1471254680822" expanded="true" signature="102862:102978" ph="SELECT tstss... ${K_TABLE_TEST_SSLCERTS}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shared/code/tce_functions_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="2670">
           <caret line="196" column="9" selection-start-line="196" selection-start-column="9" selection-end-line="196" selection-end-column="9" />
-          <folding>
-            <marker date="1471172177036" expanded="true" signature="16369:16375" ph=" " />
-            <marker date="1471172177036" expanded="true" signature="16517:16553" ph="..." />
-            <marker date="1471172177036" expanded="true" signature="16555:16561" ph=" " />
-            <marker date="1471172177036" expanded="true" signature="16714:16732" ph="..." />
-            <marker date="1471172177036" expanded="true" signature="17014:17046" ph="..." />
-            <marker date="1471172177036" expanded="true" signature="17474:17480" ph=" " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shared/code/tce_tmx.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
+        <state relative-caret-position="2235">
           <caret line="182" column="17" selection-start-line="182" selection-start-column="17" selection-end-line="182" selection-end-column="17" />
           <folding />
         </state>
@@ -1432,7 +1138,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shared/config/tce_paths.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="1470">
           <caret line="117" column="9" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
           <folding />
         </state>
@@ -1440,7 +1146,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shared/config/lang/tmx14.dtd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4563">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1448,7 +1154,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shared/config/lang/tmx.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="975">
           <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
@@ -1456,7 +1162,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shared/config/lang/language_tmx.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
+        <state relative-caret-position="461010">
           <caret line="30734" column="23" selection-start-line="30734" selection-start-column="12" selection-end-line="30734" selection-end-column="23" />
           <folding />
         </state>
@@ -1464,7 +1170,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shared/config/tce_config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
+        <state relative-caret-position="4860">
           <caret line="343" column="0" selection-start-line="343" selection-start-column="0" selection-end-line="343" selection-end-column="0" />
           <folding />
         </state>
@@ -1472,17 +1178,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/code/tce_test_execute.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="2310">
           <caret line="172" column="62" selection-start-line="172" selection-start-column="62" selection-end-line="172" selection-end-column="62" />
-          <folding>
-            <marker date="1471256914862" expanded="true" signature="5645:5674" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
+        <state relative-caret-position="15">
           <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
           <folding />
         </state>
@@ -1490,8 +1194,114 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/code/tce_user_registration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2136">
+        <state relative-caret-position="585">
           <caret line="162" column="20" selection-start-line="162" selection-start-column="16" selection-end-line="162" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/config/tce_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/config/tce_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/config/tce_email_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/code/tce_class_mailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edits/tce_bulk_registrations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
+          <folding>
+            <element signature="n#F_db_connect#0;n#!!top" expanded="false" />
+            <marker date="1471757549169" expanded="true" signature="4435:4554" ph="..." />
+            <marker date="1471757549169" expanded="true" signature="5394:5407" ph="..." />
+            <marker date="1471757549169" expanded="true" signature="5667:5741" ph="SELECT user_... tce_users" />
+            <marker date="1471757549169" expanded="true" signature="6312:7201" ph="INSERT INTO ${K_TABLE_USERS}... " />
+            <marker date="1471757549169" expanded="true" signature="7351:7442" ph="SELECT user_... ${K_TABLE_USERS}" />
+            <marker date="1471757549169" expanded="true" signature="7718:7793" ph="SELECT group... ${K_TABLE_USER_GROUP}" />
+            <marker date="1471757549169" expanded="true" signature="7931:8077" ph="INSERT INTO ${K_TABLE_USERGROUP}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install/install.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="27" column="35" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="35" />
+          <folding>
+            <marker date="1471753096117" expanded="true" signature="6480:6493" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install/tce_functions_install.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1094">
+          <caret line="253" column="52" selection-start-line="253" selection-start-column="52" selection-end-line="253" selection-end-column="52" />
+          <folding>
+            <marker date="1471753019824" expanded="true" signature="2339:2352" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="2685:2698" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="3089:3102" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="3251:3264" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="3478:3491" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="3693:3706" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="7533:7647" ph="select \'DRO... user_sequences" />
+            <marker date="1471753019824" expanded="true" signature="7813:7923" ph="select \'DRO... user_triggers" />
+            <marker date="1471753019824" expanded="true" signature="8087:8209" ph="select \'DRO... user_tables" />
+            <marker date="1471753019824" expanded="true" signature="8377:8390" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="8736:8749" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="9150:9163" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="9284:9297" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="12780:12793" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="12938:12951" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="13250:13263" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="13383:13396" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="13842:13855" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="14151:14164" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="14284:14297" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="14650:14663" ph="..." />
+            <marker date="1471753019824" expanded="true" signature="14777:14790" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install/install.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/config/tce_db_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2054">
+          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
           <folding />
         </state>
       </provider>

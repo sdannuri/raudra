@@ -117,7 +117,6 @@ $emailcfg['SMTPDebug'] = false;
 
 // Sets plugins directory path
 $emailcfg['PluginDir'] = '../../shared/phpmailer/';
-TCExam
 //============================================================+
 // END OF FILE
 //============================================================+
