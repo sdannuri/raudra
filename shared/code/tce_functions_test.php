@@ -1737,13 +1737,38 @@ function F_questionForm($test_id, $testlog_id, $formname) {
                 if (K_ENABLE_VIRTUAL_KEYBOARD) {
                     $str .= '<script src="' . K_PATH_SHARED_JSCRIPTS . 'vk/vk_easy.js?vk_skin=default" type="text/javascript"></script>' . K_NEWLINE;
                 }
-                $str .= '<textarea cols="' . K_ANSWER_TEXTAREA_COLS . '" rows="' . K_ANSWER_TEXTAREA_ROWS . '" name="answertext" id="answertext" onchange="saveAnswer()"';
+               /*$str .= '<textarea cols="' . K_ANSWER_TEXTAREA_COLS . '" rows="5" name="answertext" id="answertext" onchange="saveAnswer()"';
                 if (K_ENABLE_VIRTUAL_KEYBOARD) {
                     $str .= 'keyboardInput ';
                 }
                 $str .= 'answertext">';
                 $str .= $m['testlog_answer_text'];
-                $str .= '</textarea>' . K_NEWLINE;
+                $str .= '</textarea>' . K_NEWLINE;*/
+                
+                $str.='<table><tr><td><input type="text" name="answertext" id="answertext" onchange="saveAnswer()" value="'.$m['testlog_answer_text'].'"/></td><tr>';
+                   $str .= '<tr><td align="center"><div id="numericInput" >                
+                <table id="keypad" >
+                    <tr>
+                        <td class="key">1</td>
+                        <td class="key">2</td>
+                        <td class="key">3</td>
+                    </tr>
+                    <tr>
+                        <td class="key">4</td>
+                        <td class="key">5</td>
+                        <td class="key">6</td>
+                    </tr>
+                    <tr>
+                        <td class="key">7</td>
+                        <td class="key">8</td>
+                        <td class="key">9</td>
+                    </tr>
+                    <tr>
+                        <td class="btn">DEL</td>
+                        <td class="key">0</td>
+                        <td class="btn">CLR</td>
+                    </tr>
+                </table></div></td></tr></table>'. K_NEWLINE;
             } else {
                 // multiple-choice question
                 $checked = false;
@@ -1898,7 +1923,7 @@ function F_questionForm($test_id, $testlog_id, $formname) {
                 // check if local storage is enabled (HTML5)
                 $str .= 'var enable_storage=(typeof(Storage)!=="undefined");' . K_NEWLINE;
                 // function to save the text answer locally
-                $str .= 'function saveAnswer(){if(enable_storage){localStorage.answertext' . $testlog_id . '=document.getElementById("answertext").value;}}' . K_NEWLINE;
+                $str .= 'function saveAnswer(){  if(enable_storage){localStorage.answertext' . $testlog_id . '=document.getElementById("answertext").value;}}' . K_NEWLINE;
                 // initialize the text answer with the saved value
                 $str .= 'if(enable_storage && localStorage.answertext' . $testlog_id . '){document.getElementById("answertext").value=localStorage.answertext' . $testlog_id . ';}' . K_NEWLINE;
             }
