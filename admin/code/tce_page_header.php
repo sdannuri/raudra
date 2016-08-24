@@ -63,3 +63,27 @@ echo '<a name="topofdoc" id="topofdoc"></a>'.K_NEWLINE;
 //============================================================+
 // END OF FILE
 //============================================================+
+?>
+<script src="../../shared/jscripts/jquery-1.12.4.js" type="text/javascript"></script>
+<script>
+   $(document).ready(function(){
+      $("input[name='question_type']").click(function(el){
+          if(el.target.id == "free_answer"){
+             $("#question_negative_marks").val("0");
+             $("#question_negative_marks").attr("disabled","disabled");
+             $("#question_negative_marks").css("background-color","#F8F9F9");
+             $("#question_difficulty").val("0");
+             $("#question_difficulty").attr("disabled","disabled");
+             $("#question_difficulty").css("background-color","#F8F9F9");
+          }else{
+              $("#question_negative_marks").val("0");
+              $("#question_negative_marks").removeAttr("disabled");
+               $("#question_negative_marks").css("background-color","#FFF");
+              $("#question_difficulty").val("0");
+              $("#question_difficulty").removeAttr("disabled");
+              $("#question_difficulty").css("background-color","#FFF");
+          }
+        
+      });
+   });
+</script>
