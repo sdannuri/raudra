@@ -63,3 +63,41 @@ echo '<a name="topofdoc" id="topofdoc"></a>'.K_NEWLINE;
 //============================================================+
 // END OF FILE
 //============================================================+
+?>
+<script>
+    $(document).ready(function(){
+       // $('#numBox').click(function(){
+        $('#keypad').fadeToggle('fast');
+        event.stopPropagation();
+  //  });
+    
+    
+  
+    $('.key').click(function(){
+        var numBox = document.getElementById('answertext');
+        if(this.innerHTML == '0'){
+            if (numBox.value.length > 0)
+                numBox.value = numBox.value + this.innerHTML;
+        }
+        else
+            numBox.value = numBox.value + this.innerHTML;
+        
+        event.stopPropagation();
+    });
+    
+    $('.btn').click(function(){
+        if(this.innerHTML == 'DEL'){
+          
+            var numBox = document.getElementById('answertext');
+            if(numBox.value.length > 0){
+                numBox.value = numBox.value.substring(0, numBox.value.length - 1);
+            }
+        }
+        else{
+            document.getElementById('answertext').value = '';
+        }
+        
+        event.stopPropagation();
+    });
+    });
+</script>
