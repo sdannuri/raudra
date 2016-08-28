@@ -66,6 +66,7 @@ echo '<a name="topofdoc" id="topofdoc"></a>'.K_NEWLINE;
 ?>
 <script>
     $(document).ready(function(){
+   
        // $('#numBox').click(function(){
         $('#keypad').fadeToggle('fast');
         event.stopPropagation();
@@ -75,23 +76,53 @@ echo '<a name="topofdoc" id="topofdoc"></a>'.K_NEWLINE;
   
     $('.key').click(function(){
         var numBox = document.getElementById('answertext');
-        if(this.innerHTML == '0'){
-            if (numBox.value.length > 0)
+//        if(this.innerHTML == '0'){
+//            if (numBox.value.length > 0 && numBox.value.length<11)
+//                numBox.value = numBox.value + this.innerHTML;
+//        }
+//        else 
+      if(numBox.value.length<11){
+        if(this.innerHTML == '-'){
+            if (numBox.value.length == 0)
                 numBox.value = numBox.value + this.innerHTML;
         }
-        else
-            numBox.value = numBox.value + this.innerHTML;
+        else if(this.innerHTML == '.'){
+            console.log(numBox.value.indexOf('-'));
+            if(numBox.value.length == 1){                
+            }else{
+                if(numBox.value.indexOf('.') == -1)
+                 numBox.value = numBox.value + this.innerHTML;
+            }
+        }
+        else{
         
+            numBox.value = numBox.value + this.innerHTML;
+        }
+    }
         event.stopPropagation();
     });
     
     $('.btn').click(function(){
-        if(this.innerHTML == 'DEL'){
-          
-            var numBox = document.getElementById('answertext');
+          var numBox = document.getElementById('answertext');
+        if(this.innerHTML == 'Backspace'){           
             if(numBox.value.length > 0){
                 numBox.value = numBox.value.substring(0, numBox.value.length - 1);
             }
+        }
+        else if(this.innerHTML == '←'){
+          var current_position = numBox.value.slice(0, numBox.selectionStart).length;
+          if(current_position != 0){
+              numBox.setSelectionRange(current_position-1,current_position-1);
+          }
+           numBox.focus();
+        }
+        else if(this.innerHTML == '→'){
+           var current_position = numBox.value.slice(0, numBox.selectionStart).length;
+           
+           if(current_position != numBox.value.length){
+              numBox.setSelectionRange(current_position+1,current_position+1);
+          }
+           numBox.focus();
         }
         else{
             document.getElementById('answertext').value = '';
@@ -100,4 +131,45 @@ echo '<a name="topofdoc" id="topofdoc"></a>'.K_NEWLINE;
         event.stopPropagation();
     });
     });
+    
+    function validateNumeric(e) {        
+    if (!e) var e = window.event;
+    if (!e.which) keyPressed = e.keyCode;
+    else keyPressed = e.which;
+   
+    if ((keyPressed >= 48 && keyPressed <= 57) ||keyPressed == 45 || keyPressed == 46 || keyPressed == 8 || keyPressed == 9 || (keyPressed > 37 && keyPressed <= 40)) {
+      keyPressed = keyPressed;
+      var text = $("#answertext").val();
+      if(keyPressed ==  46){
+         if(text.indexOf(".") > -1){
+              return false;
+          }
+      }
+    
+       if(keyPressed ==  45){             
+             if(text.length == 0){
+              return true;
+            }else{
+                return false;
+            }
+        }
+        if(keyPressed ==  46){             
+             if(text.length == 0){
+              return true;
+            }else{
+             if(text.length==1){
+                if(text.indexOf("-") == "0"){
+                        return false;
+                  }
+                 }
+                return true;
+            }
+        }
+      return true;
+    } else {
+      keyPressed = 0;
+      return false;
+    }
+  }
+  
 </script>
