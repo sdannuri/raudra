@@ -1745,11 +1745,14 @@ function F_questionForm($test_id, $testlog_id, $formname) {
                 $str .= $m['testlog_answer_text'];
                 $str .= '</textarea>' . K_NEWLINE;*/
                 
-                $str.='<table><tr><td><input type="text" name="answertext" id="answertext" onchange="saveAnswer()" value="'.$m['testlog_answer_text'].'"/></td><tr>';
+                $str.='<table><tr><td><input type="text" name="answertext" id="answertext" onchange="saveAnswer()" value="'.$m['testlog_answer_text'].'" onkeypress="return validateNumeric(event);" maxlength="10"/></td><tr>';
                    $str .= '<tr><td align="center"><div id="numericInput" >                
-                <table id="keypad" >
+                <table id="keypad"  cellpadding="10" >
+                     <tr>
+                        <td colspan="3" class="btn" valign="middle" align="center">Backspace</td>
+                    </tr>
                     <tr>
-                        <td class="key">1</td>
+                        <td class="key" >1</td>
                         <td class="key">2</td>
                         <td class="key">3</td>
                     </tr>
@@ -1764,9 +1767,17 @@ function F_questionForm($test_id, $testlog_id, $formname) {
                         <td class="key">9</td>
                     </tr>
                     <tr>
-                        <td class="btn">DEL</td>
                         <td class="key">0</td>
-                        <td class="btn">CLR</td>
+                        <td class="key">.</td>
+                        <td class="key">-</td>
+                    </tr>
+                    <tr>
+                        <td class="btn">&larr;</td>
+                        <td class="key"></td>
+                         <td class="btn">&rarr;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="btn">Clear All</td>
                     </tr>
                 </table></div></td></tr></table>'. K_NEWLINE;
             } else {
