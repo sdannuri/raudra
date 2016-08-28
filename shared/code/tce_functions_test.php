@@ -156,11 +156,13 @@ function F_getUserTests() {
                     }
                 }
                 if (isset($usrtestdata['user_score']) AND ( strlen('' . $usrtestdata['user_score']) > 0)) {
+                   if($test_status == 4){
                     if ($usrtestdata['test_max_score'] > 0) {
                         $str .= '<a href="tce_show_result_user.php?testuser_id=' . $testuser_id . '&amp;test_id=' . $m['test_id'] . '" title="' . $l['h_result'] . '" class="buttongrey">' .  'View Result</a>';
                     } else {
                         $str .= '<a href="tce_show_result_user.php?testuser_id=' . $testuser_id . '&amp;test_id=' . $m['test_id'] . '" title="' . $l['h_result'] . '" class="buttongrey">' . 'View Result' . '</a>';
                     }
+                   }
                 } else {
                     $str .= '&nbsp;';
                 }
