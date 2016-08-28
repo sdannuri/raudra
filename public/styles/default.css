@@ -1606,12 +1606,12 @@ a.buttongrey:link, a.buttongrey:visited{background-color: #a8a8a8;border-radius:
 .btn{
     border:solid 1px #FFF;
     text-align:center;
-    font-weight:bold;
+    font-weight:normal;
     color:#FFF;
     cursor:pointer;
     background-color:#f4bf3d;
     width:33.3%;
-    font-size: 12px;
+    font-size: 18px;
 }
 .btn:hover{
     background-color:DarkGray;
