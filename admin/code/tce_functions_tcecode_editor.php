@@ -137,7 +137,7 @@ function getImageButton($name, $tag, $image, $onclick='', $accesskey='') {
 	if (strlen($tag) > 0) {
 		$onclick = $onclick.', \''.$tag.'\')';
 	}
-	$str = '<a href="#" onclick="'.$onclick.'" title="'.$name.' ['.$accesskey.']" accesskey="'.$accesskey.'">';
+	$str = '<a href="javascript:;" onclick="'.$onclick.'" title="'.$name.' ['.$accesskey.']" accesskey="'.$accesskey.'">';
 	$str .= '<img src="'.$image.'" alt="'.$name.' ['.$accesskey.']" class="button" width="23" height="22" />';
 	$str .= '</a>';
 	return $str;
