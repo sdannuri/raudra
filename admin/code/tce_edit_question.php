@@ -616,8 +616,64 @@ echo '<script src="'.K_PATH_SHARED_JSCRIPTS.'inserttag.js" type="text/javascript
 if (K_ENABLE_VIRTUAL_KEYBOARD) {
     echo '<script src="'.K_PATH_SHARED_JSCRIPTS.'vk/vk_easy.js?vk_skin=default" type="text/javascript"></script>'.K_NEWLINE;
 }
-
+?>
+<script>
+ $(document).ready(function(){
+      $("#answers").click(function(){
+       switchToTab2();
+    });
+    
+    $("#question").click(function(){
+       switchToTab1();
+    });
+    <?php
+        if(isset($_REQUEST["tab_type"])){
+            if($_REQUEST["tab_type"] == 1){
+                ?>
+                        switchToTab1();
+              <?php
+            }else{
+                ?>
+                        switchToTab2();
+              <?php 
+            }
+        }else{
+            ?>
+                    switchToTab1();
+                    <?php
+        }
+    ?>
+ });
+ function switchToTab1(){
+    $("#tab2").hide();
+    $("#answers").removeClass("active-tab");
+    $("#tab1").show();
+    $("#question").addClass("active-tab");
+ }
+ function switchToTab2(){
+      $("#tab1").hide();
+        $("#question").removeClass("active-tab");
+        $("#tab2").show();
+        $("#answers").addClass("active-tab");
+ }
+ 
+ /*$.ajax({
+      type: 'POST',
+      url: "",
+      data: ""
+      success: function(resultData) { 
+      ) }
+});*/
+</script>
+<div id="tab-container">
+    <div id="question">Question Overview</div>
+    <div id="answers">Answers</div>
+</div>
+<div class="clearfix"></div>
+<div id="tab1">
+<?php
 echo '<div class="sub-container user-container sub-container-box">'.K_NEWLINE;
+
 echo '<div class="sub-heading"><h1>Create Question</h1></div>';
 echo '<div class="tceformbox-user-body">'.K_NEWLINE;
 echo '<form action="'.$_SERVER['SCRIPT_NAME'].'" method="post" enctype="multipart/form-data" id="form_questioneditor">'.K_NEWLINE;
@@ -870,7 +926,9 @@ echo getFormRowTextInput('question_marks_for_correct', $l['w_marks_correct_ans']
 echo getFormRowTextInput('question_negative_marks', $l['w_negative_marks'],$l['title_negative_marks'], '', $question_negative, '^[0-9]+(\.[0-9]{1,2})?$', 10, false, false, false, '');
 
 echo '<div class="row btn_cls">'.K_NEWLINE;
-
+?>
+    <input type="hidden" name="tab_type" id="tab_type" value="1"/> 
+ <?php
 // show buttons by case
 if (isset($question_id) AND ($question_id > 0)) {
     echo '<span>';
@@ -926,9 +984,14 @@ echo '</div>'.K_NEWLINE;
 
 //echo '<div class="pagehelp">'.$l['hp_edit_question'].'</div>'.K_NEWLINE;
 echo '</div>'.K_NEWLINE;
-if ((isset($question_id) AND ($question_id > 0) || isset($_REQUEST["answer_question_id"]))) {
+?>
+    </div>
+<div id="tab2" style="display: none">
+    <?php
     require_once 'tce_edit_answer.php';
-}
+   ?>
+</div>
+<?php
 require_once('../code/tce_page_footer.php');
 
 //============================================================+
