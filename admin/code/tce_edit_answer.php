@@ -872,7 +872,9 @@ echo '</span>'.K_NEWLINE;
 echo '</div>'.K_NEWLINE;
 
 echo '<div class="row btn_cls">'.K_NEWLINE;
-
+?>
+    <input type="hidden" name="tab_type" id="tab_type" value="2"/> 
+ <?php
 // show buttons by case
 
 if (isset($answer_id) AND ($answer_id > 0)) {
