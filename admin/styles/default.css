@@ -1199,3 +1199,10 @@ fieldset{
 .col2 div.row span.label{width:29% !important;margin-top: 2%;}
 .col3 div.row span.label{width:29% !important;margin-top: 2%;}
 .label-width{width: 10% !important;}
+#tab-container{position: relative;top:30px;width:100%;text-align: center;}
+#question{float: left; border:1px solid #000;padding:13px; width:200px;position: relative;left:33%;font-weight: bold;}
+#answers{float: right; border:1px solid #000;padding:13px;width:200px;position: relative;right: 33%;margin-right: 3px;font-weight: bold;}
+.clearfix{clear: both;}
+.active-tab{background-color: #000;color:#FFF;}
+#tab1 .message{position: relative !important;top:-46px !important;}
+#tab2 .message{position: relative !important;top:-46px !important;}
