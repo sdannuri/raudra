@@ -929,11 +929,19 @@ function F_printUserTestStat($testuser_id) {
 			//$ret .= '<br /><br />'.K_NEWLINE;
 			// display question description
 			$ret .= F_decode_tcecode($m['question_description']).'<span style="float:right">( Marks: '.number_format($m['testlog_score'],2).' )</span>'.K_NEWLINE;
-
+                         
 			if ($m['question_type'] == 3) {
+                            $sql  = "SELECT answer_description FROM ".K_TABLE_ANSWERS." WHERE answer_question_id=".$m['question_id'];
+                            $resultset = F_db_query($sql,$db);
+                            $record = F_db_fetch_array($resultset);
 				// TEXT
 				$ret .= '<ul class="answer"><li>'.K_NEWLINE;
 				$ret .= F_decode_tcecode($m['testlog_answer_text']);
+                                if(trim($record['answer_description']) == trim($m['testlog_answer_text'])){
+                                      $ret .= '<img src="../../images/correct.png" width="18"/>';
+                                }else{
+                                   $ret .= '<img src="../../images/wrong.png" width="16"/>';  
+                                }
 				$ret .= '&nbsp;</li></ul>'.K_NEWLINE;
 			} else {
 				$ret .= '<ol class="answer">'.K_NEWLINE;
@@ -1009,11 +1017,13 @@ function F_printUserTestStat($testuser_id) {
 
 
 				$ret .= '</ol>'.K_NEWLINE;
-                if (K_ENABLE_QUESTION_EXPLANATION AND !empty($m['question_explanation'])) {
-                    $ret .= '<br /><span class="explanation">'.$l['w_explanation'].':</span><br /><br />'.F_decode_tcecode($m['question_explanation']).''.K_NEWLINE;
-                }
+                                
+                
 			} // end multiple answers
 			// display teacher/supervisor comment to the question
+                        if (K_ENABLE_QUESTION_EXPLANATION AND !empty($m['question_explanation'])) {
+                    $ret .= '<br /><span class="explanation">'.$l['w_explanation'].':</span><br /><br />'.F_decode_tcecode($m['question_explanation']).''.K_NEWLINE;
+                }
 			if (isset($m['testlog_comment']) AND (!empty($m['testlog_comment']))) {
 				$ret .= '<ul class="answer"><li class="comment">'.K_NEWLINE;
 				$ret .= F_decode_tcecode($m['testlog_comment']);
